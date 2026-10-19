@@ -3,80 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Good Feed — 18 de outubro de 2026</title>
+<title>Good Feed — 19 de outubro de 2026</title>
 <style>
   :root {
     --bg: #faf6ef;
-    --card: #fffdf8;
-    --text: #2b2722;
-    --muted: #7a7064;
-    --accent: #b5652b;
-    --rule: #e8dfd1;
+    --text: #2b2723;
+    --muted: #7a7065;
+    --accent: #a0522d;
+    --rule: #e6ddd0;
+    --card: #fffdf9;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #1c1a17;
+      --text: #e8e2d8;
+      --muted: #a39a8e;
+      --accent: #e0a173;
+      --rule: #3a352f;
       --card: #24211d;
-      --text: #ebe4d8;
-      --muted: #a69b8c;
-      --accent: #e0995e;
-      --rule: #3a352e;
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-    font-size: 19px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
     line-height: 1.65;
   }
   main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
   header { text-align: center; margin-bottom: 48px; }
-  header h1 { font-size: 2.6em; margin: 0; letter-spacing: -0.01em; font-weight: normal; }
-  header .date { color: var(--muted); font-style: italic; margin: 6px 0 18px; }
+  header h1 { font-size: 2.6em; margin: 0; letter-spacing: 0.01em; font-weight: normal; }
+  header .date { color: var(--muted); font-style: italic; margin: 6px 0 14px; }
   header .greeting { margin: 0; }
   h2 {
-    font-size: 1.15em;
-    font-weight: normal;
-    letter-spacing: 0.04em;
+    font-size: 1.05em;
     text-transform: uppercase;
+    letter-spacing: 0.12em;
     color: var(--accent);
-    border-top: 1px solid var(--rule);
-    padding-top: 28px;
-    margin: 52px 0 8px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin: 56px 0 24px;
+    font-weight: normal;
   }
-  article { margin: 28px 0 40px; }
-  article h3 { font-size: 1.3em; line-height: 1.3; margin: 0 0 4px; font-weight: bold; }
+  article { margin-bottom: 36px; }
+  article h3 { font-size: 1.25em; line-height: 1.3; margin: 0 0 4px; font-weight: normal; }
   article h3 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--rule); }
-  article h3 a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-  .source { color: var(--muted); font-size: 0.82em; font-style: italic; margin: 0 0 12px; }
-  article img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin: 12px 0 14px;
-    background: var(--rule);
-  }
+  article h3 a:hover { color: var(--accent); border-color: var(--accent); }
+  .source { color: var(--muted); font-size: 0.85em; margin: 0 0 10px; }
   article p { margin: 0 0 10px; }
-  .cool { color: var(--muted); font-size: 0.92em; }
-  .cool::before { content: "✨ "; }
-  .fixed { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 20px 22px; }
-  footer {
-    text-align: center;
-    margin-top: 64px;
-    padding-top: 28px;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-  }
-  footer a { color: var(--accent); }
+  .cool { font-style: italic; color: var(--muted); font-size: 0.95em; }
+  img { width: 100%; height: auto; border-radius: 6px; margin: 6px 0 12px; display: block; background: var(--rule); }
+  .block { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 20px 22px; }
+  footer { text-align: center; margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); }
+  a { color: var(--accent); }
   @media (max-width: 480px) {
-    body { font-size: 17.5px; }
-    main { padding: 32px 18px 48px; }
-    header h1 { font-size: 2.2em; }
+    body { font-size: 17px; }
+    main { padding: 32px 16px 48px; }
+    header h1 { font-size: 2.1em; }
   }
 </style>
 </head>
@@ -85,170 +70,170 @@
 
 <header>
   <h1>Good Feed</h1>
-  <p class="date">domingo, 18 de outubro de 2026</p>
-  <p class="greeting">Bom dia, Diego, e bom domingo! Hoje tem o naufrágio mais antigo do mundo, uma tia que foi o "Uber" da família por décadas e uma senhora de 99 anos passeando em cima da asa de um avião.</p>
+  <p class="date">Segunda-feira, 19 de outubro de 2026</p>
+  <p class="greeting">Bom dia, Diego! Começo de semana com estrelas verdes, linces caprichosos e um menino que juntou moedas para voar. Pega o café ☕</p>
 </header>
 
-<h2>🔬 Ciência &amp; Espaço</h2>
+<section>
+  <h2>🌌 Foto do dia</h2>
+  <div class="block">
+    <a href="https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/" target="_blank" rel="noopener"><img src="https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/trebleclef.jpg" alt="Estrutura de rádio em forma de clave de sol"></a>
+    <p><strong>Treble Clef: Unusual X-ray Hot Radio Source</strong> — A cosmic structure two million light-years long that happens to look like a musical treble clef, likely sculpted by a black hole and re-energized by colliding galaxy clusters.</p>
+  </div>
+</section>
 
-<article>
-  <h3><a href="https://www.sciencedaily.com/releases/2026/10/261018084644.htm" target="_blank" rel="noopener">Physicists create a bizarre new quantum state: a "fractional Fermi sea"</a></h3>
-  <p class="source">ScienceDaily</p>
-  <img src="https://www.sciencedaily.com/images/1920/ultracold-cesium-atoms-locked-into-hidden-ordered-state.webp" alt="Illustration of ultracold cesium atoms in an ordered quantum state" loading="lazy">
-  <p>A team at the University of Innsbruck, led by Hanns-Christoph Nägerl, lined up ultracold cesium atoms in one-dimensional tubes and then kept flipping their interactions back and forth, from strongly repelling to strongly attracting. Instead of dissolving into chaos, the atoms settled into a state that is highly excited and yet strangely orderly.</p>
-  <p>Existing theories of one-dimensional quantum matter don't fully explain what they saw, and the team suspects new quasiparticles are involved, which they've nicknamed "super-fermions" for now.</p>
-  <p class="cool">Quantum simulators are no longer just reproducing known physics: they are finding states nobody predicted.</p>
-</article>
+<section>
+  <h2>🔬 Ciência &amp; Espaço</h2>
 
-<article>
-  <h3><a href="https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html" target="_blank" rel="noopener">Japan's MMX mission is about to set off to grab soil from Mars's moon Phobos</a></h3>
-  <p class="source">Phys.org</p>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/japans-mmx-mission-aim.jpg" alt="Illustration of the MMX spacecraft near Phobos" loading="lazy">
-  <p>Launch is set for tomorrow, 19 October, from Tanegashima on an H3 rocket. The spacecraft should reach Mars in August 2027, orbit Phobos, drop off a small rover called Idefix, touch down itself in 2030, and bring at least 10 grams of moon dust back to Earth in 2031.</p>
-  <p>The big question is where Mars's two little moons came from: were they passing asteroids captured by the planet's gravity, or debris thrown up by a giant impact on Mars? The chemistry of the samples should tell.</p>
-  <p class="cool">The first sample ever brought back from the Martian system could come from a potato-shaped moon.</p>
-</article>
+  <article>
+    <img src="https://www.sciencedaily.com/images/1920/ghostly-green-glow-of-wdj1330-6435.webp" alt="Estrela anã branca verde">
+    <h3><a href="https://www.sciencedaily.com/releases/2026/10/261017230018.htm" target="_blank" rel="noopener">Astronomers discover a ghostly green star unlike any known before</a></h3>
+    <p class="source">ScienceDaily</p>
+    <p>Astronomers at the University of Warwick have found WD J1330+6435, the first white dwarf that genuinely looks green. Sodium in its dense atmosphere soaks up orange light, leaving it a pale chartreuse. Surveying 151 nearby white dwarfs, the team also spotted pink, purple, yellow and cyan ones, and estimates about one in thirty white dwarfs has an unusual colour.</p>
+    <p class="cool">Por que é legal: a gente aprendeu que estrelas mortas são “azuladas”, mas o céu é bem mais colorido que isso.</p>
+  </article>
 
-<article>
-  <h3><a href="https://phys.org/news/2026-10-shift-gene-minutes-spaceflight-reveals.html" target="_blank" rel="noopener">Plants change their gene activity within minutes of reaching space</a></h3>
-  <p class="source">Phys.org</p>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/study-finds-plants-res.jpg" alt="Arabidopsis plants used in the spaceflight experiment" loading="lazy">
-  <p>University of Florida biologists Rob Ferl and Anna-Lisa Paul flew small Arabidopsis plants on a short suborbital hop, with Ferl himself on board to "freeze" samples at four moments: before launch, on reaching weightlessness, during descent and after landing. Identical plants on the ground were preserved at the same times for comparison.</p>
-  <p>More than 1,200 genes changed their activity, with roots and leaves responding differently at each stage. Adaptation to space, it turns out, is not one switch but a sequence of quick reactions.</p>
-</article>
+  <article>
+    <h3><a href="https://www.sciencedaily.com/releases/2026/10/261018205058.htm" target="_blank" rel="noopener">Just 3,000 steps a day may help slow Alzheimer's, scientists find</a></h3>
+    <p class="source">ScienceDaily</p>
+    <p>Researchers followed almost 300 older adults and found that walking as few as 3,000 steps a day was linked to slower buildup of tau, one of the proteins tied to Alzheimer's. The more active participants showed close to half the cognitive decline, and the benefits seemed to level off at 5,000–7,500 steps. Amyloid plaques didn't change; the protection showed up in tau in memory-related brain regions.</p>
+    <p class="cool">Por que é legal: não precisa dos famosos 10 mil passos. Uma caminhada depois do café já conta.</p>
+  </article>
 
-<h2>🌱 Natureza &amp; Animais</h2>
+  <article>
+    <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/how-snakes-roll-at-hig.jpg" alt="Cobra anã rolando">
+    <h3><a href="https://phys.org/news/2026-10-wheels-dwarf-reedsnakes-bodies-high.html" target="_blank" rel="noopener">Rolling without wheels: How dwarf reedsnakes coordinate their bodies for high-speed escapes</a></h3>
+    <p class="source">Phys.org</p>
+    <p>Small Southeast Asian snakes called dwarf reedsnakes escape danger by <em>rolling</em>. A Toho University team filmed them alternating left and right, rolling onto one side and swinging an arched loop of body past the head, all while keeping the head steady and on course. They hit up to 3.7 metres per second, about four times faster than their normal slither.</p>
+    <p class="cool">Por que é legal: uma cobra que virou roda. Engenheiros de robótica já estão de olho.</p>
+  </article>
+</section>
 
-<article>
-  <h3><a href="https://phys.org/news/2026-10-social-bonds-wild-jackdaws.html" target="_blank" rel="noopener">Close friends help wild jackdaws keep their spot at the feeder, even if it means waiting</a></h3>
-  <p class="source">Phys.org</p>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/the-feeding-benefits-a.jpg" alt="Wild jackdaws at a feeding station" loading="lazy">
-  <p>Researchers tracked wild jackdaws at feeding stations and found the birds strongly preferred to show up with their bonded partners: mates and close relatives. Together, they were much less likely to be shoved away by other birds.</p>
-  <p>Friendship has a price, though. Partners often waited their turn so the other could eat first. And young jackdaws tagging along with their parents may be learning how to use the feeders, an extra perk of staying close to family.</p>
-  <p class="cool">Even in a crowd of crows, it pays to have someone who saves you a place in line.</p>
-</article>
+<section>
+  <h2>🌱 Natureza &amp; Animais</h2>
 
-<article>
-  <h3><a href="https://www.goodnewsnetwork.org/largest-private-conservation-project-in-the-us-hits-major-milestone-as-free-roaming-bison-pass-1000/" target="_blank" rel="noopener">Free-roaming bison on the American Prairie pass 1,000 for the first time</a></h3>
-  <p class="source">Good News Network</p>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/unnamed.jpg" alt="Bison on the prairie in Montana" loading="lazy">
-  <p>After more than 20 years of work, the nonprofit American Prairie now has 1,016 bison roaming its land in Montana. The group manages about 600,000 acres and hopes to stitch together 3.2 million, which would put it among the ten largest protected areas in the US.</p>
-  <p>Bison today number only 1–3.5% of what once lived on the plains, and few herds get to move around freely. Every animal added to a wild-roaming herd matters.</p>
-</article>
+  <article>
+    <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/19141028/Mongabay_Thumbnail_Lynx_Featured-338x512.jpg" alt="Lince-ibérico">
+    <h3><a href="https://news.mongabay.com/short-article/2026/10/why-are-these-lynxes-washing-their-food/" target="_blank" rel="noopener">Why are these lynxes washing their food?</a></h3>
+    <p class="source">Mongabay</p>
+    <p>Over five years, camera traps in Spain caught several female Iberian lynxes dipping dead rabbits into water troughs before eating them, something nobody had documented in a wild cat. Maybe it's a way to get extra water in hot summers, or to soften meals for cubs. Or maybe it's something else. Scientists honestly don't know yet.</p>
+    <p class="cool">Por que é legal: uma espécie que quase sumiu agora está aí, inventando moda.</p>
+  </article>
 
-<article>
-  <h3><a href="https://agencia.fapesp.br/regeneracao-natural-de-florestas-ajuda-a-conter-o-avanco-de-especies-invasoras/59411" target="_blank" rel="noopener">Regeneração natural de florestas ajuda a conter o avanço de espécies invasoras</a></h3>
-  <p class="source">Agência FAPESP</p>
-  <img src="https://agencia.fapesp.br/files/post/59411.jpeg" alt="Floresta secundária em regeneração" loading="lazy">
-  <p>Um estudo liderado por Angelica Faria de Resende, da Esalq-USP, com pesquisadores de cerca de 60 instituições, analisou 1.561 áreas de floresta secundária em dez países das Américas, do Brasil ao México. Nos primeiros 10 a 20 anos de regeneração, árvores exóticas chegam a ocupar até 28% dos troncos nas matas úmidas.</p>
-  <p>Mas a vantagem delas dura pouco: essas espécies oportunistas precisam de muita luz e vão sumindo à medida que as nativas crescem e fazem sombra. Ou seja, se deixada em paz, a própria floresta resolve boa parte do problema.</p>
-  <p class="cool">A sombra das árvores nativas é uma ferramenta de manejo gratuita.</p>
-</article>
+  <article>
+    <img src="https://sciencedaily.com/images/1920/corals-can-fully-recover-from-bleaching.webp" alt="Corais se recuperando">
+    <h3><a href="https://www.sciencedaily.com/releases/2026/10/261017230025.htm" target="_blank" rel="noopener">A simple touch can bring dying corals back to life in just 7 weeks</a></h3>
+    <p class="source">ScienceDaily</p>
+    <p>Stanford researchers put severely bleached corals in physical contact with healthy, genetically identical corals. The tissues fused and passed along the symbiotic algae corals need, and the bleached ones fully recovered in seven weeks. Sometimes five days of contact was enough to start the healing. It won't work reef-wide yet, but it's the fastest bleaching recovery ever recorded.</p>
+  </article>
 
-<h2>🧑‍🤝‍🧑 Histórias Humanas</h2>
+  <article>
+    <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-19-at-08.28.10.jpeg" alt="Animais do Cerrado bebendo água">
+    <h3><a href="https://www.sonoticiaboa.com.br/2026/10/19/animais-cerrado-bebendo-agua-cameras-video" target="_blank" rel="noopener">Câmeras escondidas mostram animais do Cerrado bebendo água e cenas encantam</a></h3>
+    <p class="source">Só Notícia Boa</p>
+    <p>Câmeras automáticas do projeto Onçafari, instaladas numa poça d'água na divisa entre Bahia, Goiás e Minas Gerais, filmaram o vaivém da fauna do Cerrado. Passaram por lá araras-canindé, catetos com filhotes, anta, tamanduá, onça-parda, jaguatirica, veado-campeiro, seriema e lobo-guará. Todo mundo dividindo o mesmo bebedouro.</p>
+    <p class="cool">Por que é legal: é o Cerrado inteiro num só lugar, e é tudo nosso.</p>
+  </article>
+</section>
 
-<article>
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/10/18/tia-81-anos-carro-presente-sobrinhos" target="_blank" rel="noopener">Aos 81 anos, tia que levou os sobrinhos à escola por décadas ganha carro de presente</a></h3>
-  <p class="source">Só Notícia Boa</p>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-18-at-08.35.41.jpeg" alt="Tia Nedi recebe o carro novo dos sobrinhos" loading="lazy">
-  <p>Em Curitibanos (SC), a tia Nedi Sartori passou anos levando os sobrinhos para a escola, para a aula de piano e para o reforço, sempre ao volante de um Opala 1980. Agora, os sobrinhos crescidos se juntaram para retribuir.</p>
-  <p>A sobrinha Mariana inventou que estava gravando um vídeo sobre idosos dirigindo carro automático e levou a tia até a antiga escola. Lá, uma mensagem gravada pelo pai dela agradecia à "Uber" da família, e o carro novo esperava na porta. O vídeo passou de 1 milhão de visualizações.</p>
-</article>
+<section>
+  <h2>🧑‍🤝‍🧑 Histórias Humanas</h2>
 
-<article>
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/10/18/meninas-ferramenta-contra-fake-news-nasa" target="_blank" rel="noopener">Meninas de 14 anos criam ferramenta contra notícias falsas e ganham viagem à Nasa</a></h3>
-  <p class="source">Só Notícia Boa</p>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/10/so-noticia-boa-site-800x560-1.png" alt="As estudantes de Recife vencedoras do HackaNAV" loading="lazy">
-  <p>Alice Gomes, Beatriz Vasconcellos e Letícia de Oliveira, alunas do 9º ano de um colégio no Recife, criaram a plataforma "Pense Bem". A ideia é simples: antes de compartilhar uma postagem, a pessoa passa o conteúdo pela ferramenta, que aponta sinais de uso de inteligência artificial e ajuda a checar se os fatos se sustentam.</p>
-  <p>O projeto venceu o HackaNAV 2026, competição nacional de inovação para estudantes, e o prêmio é uma viagem de imersão tecnológica na Nasa, nos Estados Unidos.</p>
-</article>
+  <article>
+    <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-19-at-07.46.30.jpeg" alt="Pescadoras brasileiras em Roma">
+    <h3><a href="https://www.sonoticiaboa.com.br/2026/10/19/pescadoras-brasileiras-heroinas-onu-roma" target="_blank" rel="noopener">Pescadoras brasileiras de 44 e 70 anos ganham título de heroínas da ONU em Roma</a></h3>
+    <p class="source">Só Notícia Boa</p>
+    <p>Joana Mousinho, 70 anos, de Pernambuco, foi a primeira mulher a presidir uma colônia de pescadores no Brasil. Luena Pataxó, 44, da Bahia, preside a associação de pescadores indígenas Pataxó. Escolhidas entre 609 indicações de 131 países, as duas entraram na lista das 100 Mulheres Heroínas da FAO pelo trabalho com pesca artesanal, renda e preservação ambiental.</p>
+  </article>
 
-<article>
-  <h3><a href="https://www.goodnewsnetwork.org/99-yo-woman-snags-worlds-oldest-wing-walker-title/" target="_blank" rel="noopener">At 99, Helga Duffy becomes the world's oldest female wing-walker</a></h3>
-  <p class="source">Good News Network</p>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Helga-Duffy-breaks-world-record-for-wingwalking-AeroSuperBatics-Wingwalkers-via-SWNS.jpeg" alt="Helga Duffy strapped to the wing of a biplane" loading="lazy">
-  <p>Strapped on top of a biplane over Gloucestershire, England, Helga Duffy spent more than five minutes in the air and earned a Guinness World Record, taking the title from a 97-year-old who had set it just three months earlier. Arthritis and bad knees didn't stop her.</p>
-  <p>She said the air up there was so pure you wouldn't believe it, and her advice to everyone else is to try anything and never say "I can't". The flight also raised about £1,600 for a local air ambulance.</p>
-  <p class="cool">The record keeps going to women in their late 90s. That says something lovely about the late 90s.</p>
-</article>
+  <article>
+    <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-19-at-08.42.02.jpeg" alt="Menino no avião">
+    <h3><a href="https://www.sonoticiaboa.com.br/2026/10/19/menino-11-anos-moedas-primeiro-voo-aviao" target="_blank" rel="noopener">Menino de 11 anos que juntava moedas para viajar de avião ganha primeiro voo da vida</a></h3>
+    <p class="source">Só Notícia Boa</p>
+    <p>Emmanuel, de Aracaju (SE), é apaixonado por aviação e guardava todas as moedas que ganhava num cofrinho batizado de “Cofrinho das minhas passagens”. A irmã, Suzana, contou a história à Gol, que deu a ele uma viagem surpresa no Mês das Crianças. Ele voou até São Paulo e ainda conheceu os bastidores do aeroporto.</p>
+    <p class="cool">Por que é legal: o nome do cofrinho já valia a passagem.</p>
+  </article>
 
-<h2>🛠️ Tecnologia, História &amp; Curiosidades</h2>
+  <article>
+    <img src="https://www.positive.news/wp-content/uploads/2026/10/Atlantic-Salmon-001-%C2%A9-Darren-Honeywill-2026-1800x0-c-center.jpg" alt="Salmão do Atlântico">
+    <h3><a href="https://www.positive.news/society/volunteers-became-salmon-deer-and-earthworms-then-they-set-out-to-save-their-river/" target="_blank" rel="noopener">Volunteers became salmon, deer and earthworms. Then they set out to save their river</a></h3>
+    <p class="source">Positive News</p>
+    <p>In Somerset, England, eighteen volunteers spent time imagining life along the River Tone as a salmon, a deer, an earthworm, an otter or a kestrel. Seeing the river through animal eyes made pollution and habitat damage hard to ignore. As one participant said, "once you see it, you can't unsee it." The group has since mapped out a 30-year plan to bring the river back.</p>
+  </article>
+</section>
 
-<article>
-  <h3><a href="https://phys.org/news/2026-10-world-oldest-shipwreck-coast-turkey.html" target="_blank" rel="noopener">The world's oldest known shipwreck may lie off the coast of Turkey</a></h3>
-  <p class="source">Phys.org</p>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/worlds-oldest-shipwrec.jpg" alt="Ancient pottery on the seabed off Kekova, Turkey" loading="lazy">
-  <p>Divers off the Kekova coast found a wreck whose cargo of large "belted" storage jars points to a date of roughly 2700–2400 B.C. That would make it about 300 years older than the previous record holder, near Dokos in Greece.</p>
-  <p>The ship may have carried olive oil, wine or tree resin, goods that also show up in ancient Egyptian trade records. The results are still preliminary and not yet peer-reviewed, but they offer a rare look at Bronze Age trade at sea.</p>
-  <p class="cool">Someone loaded those jars more than 4,500 years ago, and they're still sitting where the ship went down.</p>
-</article>
+<section>
+  <h2>🛠️ Tecnologia, História &amp; Curiosidades</h2>
 
-<article>
-  <h3><a href="https://phys.org/news/2026-10-cranked-device-blood-red-cell.html" target="_blank" rel="noopener">A hand-cranked gadget reads blood type in about a minute, no electricity needed</a></h3>
-  <p class="source">Phys.org</p>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/hand-cranked-device-te.jpg" alt="The hand-cranked microfluidic blood-testing device" loading="lazy">
-  <p>Engineers at National Taiwan University built a small disc with tiny channels that you spin with a hand crank, like a mini centrifuge. A few drops of blood from a finger prick flow through channels containing reagents. Where the blood type matches, red cells clump into a visible band, and the length of the band shows how many red cells there are.</p>
-  <p>Tested on samples from 21 hospital patients, it matched standard lab analyzers closely, however fast or slow the crank was turned. It could be very handy for clinics without power or trained staff.</p>
-</article>
+  <article>
+    <img src="https://th-thumbnailer.cdn-si-edu.com/WmXlnfY7AIf8S3DDNWzYXowmuG4=/420x240/filters:focal(800x602:801x603)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/17/cd/17cdf8a2-67ba-42d2-a59f-94366ec5d3cd/847496580_1527305306097677_6996053566867282813_n.jpg" alt="Escavação de estátua de Ramsés II">
+    <h3><a href="https://www.smithsonianmag.com/smart-news/a-farmer-in-egypt-stumbled-upon-a-pink-stone-and-called-the-authorities-they-found-the-remains-of-two-colossal-statues-of-ramses-ii-beneath-the-property-180989708/" target="_blank" rel="noopener">A farmer in Egypt stumbled upon a pink stone and called the authorities. They found two colossal statues of Ramses II</a></h3>
+    <p class="source">Smithsonian Magazine</p>
+    <p>An Egyptian farmer spotted an odd pink stone on his land and reported it. Archaeologists dug underneath and found the remains of two colossal statues of Ramses II. One of the heads suggests a statue that may have stood almost 28 feet (about 8.5 metres) tall, which points to a big building project ordered by the pharaoh.</p>
+    <p class="cool">Por que é legal: às vezes a história está literalmente embaixo do quintal.</p>
+  </article>
 
-<article>
-  <h3><a href="https://www.goodnewsnetwork.org/village-installs-knitted-traffic-cops-to-slow-speeding-drivers/" target="_blank" rel="noopener">An English village slows down speeding drivers with knitted traffic cops</a></h3>
-  <p class="source">Good News Network</p>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Knitted-traffic-officer-by-Emma-Trimble-via-SWNS.jpeg" alt="A knitted traffic officer holding a mock speed gun" loading="lazy">
-  <p>After 11 crashes in four years on one road, the local knitting club in Fillongley, Warwickshire, spent four months making life-size wool police officers, complete with hi-vis vests and fake speed guns. They went up on 13 October.</p>
-  <p>It's working: brake lights come on as soon as drivers spot them. A local councillor noted that people ignore electronic speed signs but slow right down for a woollen officer.</p>
-  <p class="cool">Road safety, powered by a knitting circle.</p>
-</article>
+  <article>
+    <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-19-at-08.59.07.jpeg" alt="Tecido feito de fungos">
+    <h3><a href="https://www.sonoticiaboa.com.br/2026/10/19/tecido-fungos-couro-bolsas-roupas" target="_blank" rel="noopener">Cientistas criam tecido parecido com couro usando fungos para fazer bolsas e roupas</a></h3>
+    <p class="source">Só Notícia Boa</p>
+    <p>Pesquisadores do centro VTT, na Finlândia, cultivam o fungo <em>Trichoderma reesei</em> em tanques com água e nutrientes, num processo parecido com o de fazer cerveja. Com celulose e sorbitol para dar resistência e flexibilidade, sai um material com cara de couro. Em compostagem industrial, ele se decompõe por completo em cerca de seis semanas.</p>
+  </article>
 
-<h2>🎨 Arte &amp; Design</h2>
+  <article>
+    <img src="https://agencia.fapesp.br/files/post/59418.jpg" alt="Plataforma de matemática em Libras">
+    <h3><a href="https://agencia.fapesp.br/projeto-busca-universitarios-surdos-para-desenvolver-plataforma-de-matematica-em-libras/59418" target="_blank" rel="noopener">Projeto busca universitários surdos para desenvolver plataforma de matemática em Libras</a></h3>
+    <p class="source">Agência FAPESP</p>
+    <p>O Centro Brasileiro de Geometria, na Unicamp, vai criar o LibrasMat, uma plataforma gratuita com vídeos que resolvem questões de matemática do Enem em Libras. Até 16 universitários de exatas, surdos ou fluentes em Libras, vão receber bolsa para produzir o conteúdo. Um dos desafios é que ainda falta vocabulário matemático padronizado em Libras, e o projeto quer ajudar a construir isso junto com a comunidade surda.</p>
+  </article>
+</section>
 
-<article>
-  <h3><a href="https://www.thisiscolossal.com/2026/10/wildlife-photographer-of-the-year-2026-winners/" target="_blank" rel="noopener">The Wildlife Photographer of the Year 2026 winners</a></h3>
-  <p class="source">Colossal</p>
-  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/10/wpy-4.jpg" alt="A winning image from Wildlife Photographer of the Year 2026" loading="lazy">
-  <p>The grand prize went to Italian photographer Federico Veronesi for "The Aftermath", a black-and-white image of an elephant carrying her dead calf. It's a rare, moving glimpse of how animals seem to grieve. In the 10-and-under category, Amelie Davis from the UK won with a common carder bee landing on a flower.</p>
-  <p>Other highlights include slime moulds, coyotes walking through San Francisco and mushrooms glowing under ultraviolet light. A record 65,403 entries came in from 121 countries, and the top 100 are on show at London's Natural History Museum until July 2027.</p>
-</article>
+<section>
+  <h2>🎨 Arte &amp; Design</h2>
 
-<article>
-  <h3><a href="https://www.thisiscolossal.com/2026/10/robin-f-williams-paintings-act-natural/" target="_blank" rel="noopener">Robin F. Williams paints our strange romance with our devices</a></h3>
-  <p class="source">Colossal</p>
-  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/10/williams-6.jpg" alt="A painting by Robin F. Williams from the series Act Natural" loading="lazy">
-  <p>In "Act Natural", a pop-up show in London through 24 October, the Brooklyn painter mixes old art-history poses with glossy, frictionless images of the screen age: someone in bed scrolling inside rainbow infinity loops, a cyborg mermaid, angels holding smartphones.</p>
-  <p>The paintings are seductive and a little unsettling at the same time, which may be the most honest way to picture how much of our lives now happens on a screen.</p>
-</article>
+  <article>
+    <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/10/lion.jpeg" alt="Nebulosa do Leão vista pelo Webb">
+    <h3><a href="https://www.thisiscolossal.com/2026/10/nasa-james-webb-space-telescope-lion-nebula/" target="_blank" rel="noopener">Come Face-to-Face with the Lion Nebula in the James Webb Space Telescope's Portrait</a></h3>
+    <p class="source">Colossal</p>
+    <p>Webb's infrared portrait of NGC 2392 shows a dying star shedding its outer layers into a glowing bubble of gas that looks like a lion's face. The bright core is the nose and the shell is the mane. You can see where the star's radiation is destroying dust and where delicate filaments are holding on. In about 10,000 years the whole thing will have drifted away.</p>
+  </article>
 
-<h2>🌌 Foto do dia</h2>
+  <article>
+    <img src="https://img.atlasobscura.com/mB3nPzPEK45L9_ucHsMPbTUciC4sSNKHpI_nZJLAmd4/rs:fill:300:200:1/g:ce/c:3045:2030:nowe:755:500/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMWMy/MzU4YS1mN2RkLTQ1/NDItOTdlMi0zZjg5/ODIxMjJiMDIzMTFj/ZDExMzU4M2IwYmU5/MmNfSU1HXzkwNzQu/anBlZw.jpg" alt="Letreiros antigos na fachada da Gruta 77">
+    <h3><a href="https://www.atlasobscura.com/places/commercial-signage-on-the-facade-of-gruta-77" target="_blank" rel="noopener">Commercial Signage on the Façade of Gruta 77</a></h3>
+    <p class="source">Atlas Obscura</p>
+    <p>Gruta 77 is a legendary punk venue in Madrid, and its façade is covered in vintage shop signs rescued from neighbourhood businesses that no longer exist. It works as a small open-air archive of the city's old lettering and graphic design. The venue is expected to close at the end of 2026, so this is a good moment to look.</p>
+  </article>
 
-<article class="fixed">
-  <h3><a href="https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/" target="_blank" rel="noopener">Sonified: Eagle Nebula Pillars</a></h3>
-  <p class="source">NASA Astronomy Picture of the Day · NASA, ESA, Hubble Heritage (STScI/AURA); sonificação: NASA, CXC, SAO, K. Arcand, M. Russo &amp; A. Santaguida</p>
-  <p>Hoje a foto do dia é para ouvir: os Pilares da Criação, na Nebulosa da Águia, a cerca de 6.500 anos-luz, viraram música. Uma linha percorre a imagem da esquerda para a direita, e cada estrela e nuvem de poeira vira um som, mais agudo quanto mais alto estiver. Vale abrir com fone de ouvido.</p>
-</article>
+  <article>
+    <img src="https://img.atlasobscura.com/WCu9xmLX94MjGUtEDsuJiM2rzt47-iAvr27qlca4vnI/rs:fill:300:200:1/g:ce/c:2396:1597:nowe:0:623/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hZTc0/ZDRhYS0wODQ2LTQz/MDktOTZmNC0yN2Vl/MGUwYmQ0MTYxY2U3/N2I2YTIwMjNlMWY0/NGVfUFhMXzIwMjUx/MTIxXzEyNTUxMDQ3/MC5qcGc.jpg" alt="Casa da Arquitetura Egípcia, Cairo">
+    <h3><a href="https://www.atlasobscura.com/places/house-of-egyptian-architecture" target="_blank" rel="noopener">House of Egyptian Architecture</a></h3>
+    <p class="source">Atlas Obscura</p>
+    <p>The Ali Labib House in Cairo is an Ottoman-era home that is now a museum of Egyptian building design, from antiquity to the present. Inside you'll find elaborate Islamic decorative work, and from the house you get views over historic Cairo.</p>
+  </article>
+</section>
 
-<h2>📜 Neste dia</h2>
+<section>
+  <h2>📜 Neste dia</h2>
+  <div class="block">
+    <p><strong>19 de outubro de 1913</strong> — Nasce, na Gávea, no Rio de Janeiro, <a href="https://pt.wikipedia.org/wiki/Vinícius_de_Moraes" target="_blank" rel="noopener">Vinicius de Moraes</a>, o “poetinha”. Com Tom Jobim fez “Garota de Ipanema”, talvez a canção brasileira mais conhecida no mundo. Com Baden Powell vieram os afro-sambas, como “Canto de Ossanha”, e com Toquinho, “Tarde em Itapoã”. Boa trilha sonora para hoje.</p>
+  </div>
+</section>
 
-<article class="fixed">
-  <h3><a href="https://pt.wikipedia.org/wiki/Galileu_(sonda_espacial)" target="_blank" rel="noopener">18 de outubro de 1989: a sonda Galileu parte para Júpiter</a></h3>
-  <p class="source">Wikipédia</p>
-  <p>Há 37 anos, o ônibus espacial Atlantis levava ao espaço a sonda Galileu, a primeira a entrar em órbita de Júpiter. No caminho, ela fez a primeira visita de perto a um asteroide e descobriu que o asteroide Ida tinha a sua própria lua minúscula, Dáctilo.</p>
-  <p>Ao chegar, em 1995, lançou uma pequena sonda para dentro das nuvens do planeta e passou oito anos estudando suas luas. Os dados dela deram fortes indícios de um oceano escondido sob o gelo de Europa, hoje um dos lugares mais promissores para procurar vida.</p>
-</article>
-
-<h2>📖 Leitura longa</h2>
-
-<article class="fixed">
-  <h3><a href="https://www.quantamagazine.org/how-do-fungi-keep-the-planet-healthy-20261015/" target="_blank" rel="noopener">How Do Fungi Keep the Planet Healthy?</a></h3>
-  <p class="source">Quanta Magazine · The Joy of Why (podcast com transcrição completa)</p>
-  <img src="https://www.quantamagazine.org/wp-content/uploads/2026/10/JOW-S5-E10-cr-Chanelle-Nibbelink-Default-NO-LOGO.webp" alt="Illustration of underground fungal networks" loading="lazy">
-  <p>Steven Strogatz and Janna Levin talk with evolutionary biologist Toby Kiers about the fungal networks that live in partnership with plant roots. Through the same thin tubes, these fungi move nutrients up toward plants and carry carbon down into the soil at the same time, which at first seemed physically impossible.</p>
-  <p>They also seem to "trade": sending more phosphorus to plants that pay more carbon, and less to shaded plants that can't afford it. Together they lock away around 13 billion tons of CO₂ a year. It's about an hour to listen to, or a long, unhurried read in the transcript, perfect for a Sunday.</p>
-  <p class="cool">One network, many genomes: fungi make you question what even counts as an individual.</p>
-</article>
+<section>
+  <h2>📖 Leitura longa</h2>
+  <article>
+    <img src="https://images.aeonmedia.co/images/2185ca1b-0c32-4af5-bcf9-3c2def289504/herbert-list-essay-par184662.jpg?width=1200&amp;quality=75&amp;format=auto" alt="Ilustração do ensaio">
+    <h3><a href="https://aeon.co/essays/the-century-long-search-for-the-limits-to-knowledge" target="_blank" rel="noopener">The ladder of knowledge</a></h3>
+    <p class="source">Aeon · Alexander V Gheorghiu · ~20 min</p>
+    <p>A UCL logician walks through a century of attempts to find the limits of what we can know, from Hilbert's confidence that everything could be proved, through Gödel's incompleteness theorems, to newer ideas from Dummett and Sandqvist. His argument is that truth isn't a fixed place we keep failing to reach. It grows as we build the ladder, one rung at a time.</p>
+    <p class="cool">Por que é legal: filosofia da matemática que dá pra ler devagar, com um segundo café.</p>
+  </article>
+</section>
 
 <footer>
   <p>Pronto, é isso por hoje ☕</p>
-  <a href="editions/2026-10-17.html">← Edição anterior (17 de outubro)</a>
+  <a href="editions/2026-10-18.html">← Edição anterior (18 de outubro)</a>
 </footer>
 
 </main>
