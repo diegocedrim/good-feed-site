@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Good Feed — 2 de novembro de 2026</title>
+<title>Good Feed — 3 de novembro de 2026</title>
 <style>
   :root {
     --bg: #faf6ef;
-    --text: #2b2724;
-    --muted: #7a6f64;
+    --card: #fffdf8;
+    --text: #2b2723;
+    --muted: #7a7067;
     --accent: #a0522d;
-    --rule: #e6ddd0;
-    --card: #fffdf9;
+    --rule: #e8dfd2;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #1c1a18;
-      --text: #e9e3da;
-      --muted: #a89d90;
-      --accent: #e0a070;
-      --rule: #3a3530;
-      --card: #24211e;
+      --bg: #1c1a17;
+      --card: #24211d;
+      --text: #ebe4d9;
+      --muted: #a39887;
+      --accent: #e0a074;
+      --rule: #3a352e;
     }
   }
   * { box-sizing: border-box; }
@@ -29,54 +29,31 @@
     background: var(--bg);
     color: var(--text);
     font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.65;
-    -webkit-text-size-adjust: 100%;
   }
   main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
   header { text-align: center; margin-bottom: 48px; }
-  header h1 { font-size: 2.6em; margin: 0; letter-spacing: -0.01em; font-weight: normal; }
+  header h1 { font-size: 2.6em; margin: 0; letter-spacing: -0.5px; font-weight: normal; }
   header .date { color: var(--muted); font-style: italic; margin: 6px 0 14px; }
-  header .greeting { margin: 0 auto; max-width: 520px; }
+  header .greeting { margin: 0; }
   h2 {
-    font-size: 1.25em;
-    font-weight: normal;
-    margin: 56px 0 18px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--rule);
-    letter-spacing: 0.01em;
+    font-size: 1.3em; font-weight: normal; margin: 56px 0 18px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--rule);
   }
   article { margin: 0 0 36px; }
-  article h3 { font-size: 1.15em; line-height: 1.35; margin: 0 0 4px; font-weight: bold; }
+  article h3 { font-size: 1.15em; line-height: 1.35; margin: 0 0 4px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  article h3 a { color: var(--text); }
-  article h3 a:hover { color: var(--accent); }
-  .source { color: var(--muted); font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 10px; }
+  .source { color: var(--muted); font-size: 0.85em; margin: 0 0 10px; font-variant: small-caps; letter-spacing: 0.3px; }
   article p { margin: 0 0 10px; }
-  .cool { color: var(--muted); font-style: italic; font-size: 0.95em; }
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 380px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin: 0 0 14px;
-    background: var(--rule);
-  }
-  .feature { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 20px; }
-  .feature img { max-height: none; }
-  footer {
-    text-align: center;
-    margin-top: 72px;
-    padding-top: 24px;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 1.05em;
-  }
+  .why { color: var(--muted); font-style: italic; font-size: 0.95em; }
+  img { display: block; width: 100%; height: auto; border-radius: 6px; margin: 0 0 14px; background: var(--rule); }
+  .box { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 20px 22px; }
+  .box img { margin-bottom: 12px; }
+  footer { text-align: center; margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); }
   @media (max-width: 480px) {
-    body { font-size: 17.5px; }
+    body { font-size: 17px; }
     main { padding: 32px 16px 48px; }
     header h1 { font-size: 2.1em; }
   }
@@ -87,159 +64,156 @@
 
 <header>
   <h1>Good Feed</h1>
-  <p class="date">Segunda-feira, 2 de novembro de 2026</p>
-  <p class="greeting">Bom dia, Diego! Feriado de Finados, semana começando devagar — pegue o café, que hoje tem nuvem em Marte, céu de novembro e um menino com um irmão na Alemanha.</p>
+  <p class="date">Terça-feira, 3 de novembro de 2026</p>
+  <p class="greeting">Bom dia, Diego! Pega o café: hoje tem asteroide com DNA, sapo que voltou e um menino cearense que ganhou do mundo.</p>
 </header>
 
 <h2>🌌 Foto do dia</h2>
-<article class="feature">
-  <img src="https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/MonsCloud_MarsExpress_1920.jpg" alt="Nuvem longa e fina se estendendo a partir do vulcão Arsia Mons, em Marte">
-  <h3><a href="https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/" target="_blank" rel="noopener">A Long Cloud on Mars</a></h3>
-  <p class="source">NASA APOD · ESA, DLR, FU Berlin; processamento J. Cowart</p>
-  <p>Uma nuvem de gelo de água que nasce no vulcão Arsia Mons e é esticada pelo vento por mais de 1.500 km — só aparece de manhã, na primavera e no verão marcianos, e ninguém sabe ao certo como ela se forma no ar quase sem poeira.</p>
-</article>
+<div class="box">
+  <a href="https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/" target="_blank" rel="noopener"><img src="https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/CometMeteor_Metais_1934.jpg" alt="Cometa PanSTARRS e um meteoro colorido"></a>
+  <p><strong>Cometa PanSTARRS e meteoro arco-íris</strong>: fotografado dos Pireneus franceses, um meteoro multicolorido risca o céu ao lado da cauda do cometa C/2025 R3. Parecem juntos, mas o cometa está muito, muito mais longe. <span class="source">— NASA APOD · Eddy Metais</span></p>
+</div>
 
 <h2>🔬 Ciência &amp; Espaço</h2>
 
 <article>
-  <img src="https://scx1.b-cdn.net/csz/news/800a/2026/astronomers-date-a-mil.jpg" alt="Aglomerado estelar VVV CL001">
-  <h3><a href="https://phys.org/news/2026-10-shrouded-milky-star-cluster-universe.html" target="_blank" rel="noopener">A dust-hidden star cluster may be nearly as old as the universe</a></h3>
+  <img src="https://www.sciencedaily.com/images/1920/ryugu-sample-in-return-capsule.webp" alt="Amostra do asteroide Ryugu na cápsula de retorno">
+  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261102075903.htm" target="_blank" rel="noopener">All 5 genetic "letters" of DNA and RNA discovered in a 4.5-billion-year-old asteroid</a></h3>
+  <p class="source">ScienceDaily</p>
+  <p>Japanese scientists analysing the 5.4 grams of asteroid Ryugu brought home by the Hayabusa2 probe have found all five nucleobases — the molecular letters that spell out DNA and RNA. The samples were handled in ultra-clean conditions to rule out contamination from Earth. NASA's Bennu samples showed the same thing last year, which suggests these building blocks were scattered all over the young Solar System.</p>
+  <p class="why">Why it's cool: the alphabet of life may have been raining down on Earth long before life began.</p>
+</article>
+
+<article>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/a-tiny-shift-exposes-a.jpg" alt="Imagem do Webb do objeto Capotauro">
+  <h3><a href="https://phys.org/news/2026-11-tiny-shift-exposes-cold-brown.html" target="_blank" rel="noopener">A tiny shift exposes a cold brown dwarf masquerading as an early galaxy</a></h3>
   <p class="source">Phys.org</p>
-  <p>VVV CL001 is a globular cluster tucked behind thick dust near the center of the Milky Way, about 24,000 light-years away. Astronomers led by INAF’s Capodimonte Observatory combined infrared images from a 6.5-meter Magellan telescope with Hubble data, used machine learning to pick out ~155 member stars, and dated it to about 13.4 billion years — just a few hundred million years after the Big Bang. It may be the oldest cluster in our galaxy; a spectroscopic follow-up is planned to check its chemistry.</p>
-  <p class="cool">Why it’s cool: some of the stars above us are almost as old as time itself.</p>
+  <p>Webb spotted an object nicknamed Capotauro that looked like one of the very first galaxies, shining just 100 million years after the Big Bang. But between 2022 and 2026 it moved a tiny bit across the sky, and real distant galaxies don't do that. It turns out to be a cold brown dwarf in our own Milky Way, about 2,400 light-years away and roughly as warm as a hot cup of tea.</p>
+  <p class="why">Why it's cool: a cosmic impostor caught because it couldn't stay still.</p>
 </article>
 
 <article>
-  <img src="https://www.sciencedaily.com/images/1920/primeval-caveman-family-around-fire.webp" alt="Família pré-histórica ao redor do fogo">
-  <h3><a href="https://www.sciencedaily.com/releases/2026/10/261031221153.htm" target="_blank" rel="noopener">30,000-year-old DNA shows Ice Age Europeans were far more connected than we thought</a></h3>
-  <p class="source">ScienceDaily</p>
-  <p>A University of Vienna-led team studied the Gravettians, who lived across Europe 34,000–25,000 years ago, combining rare skeletons with human DNA pulled straight from cave sediment — even from a cave with no bones at all. A woman from Isturitz Cave, in southwestern France, carried ancestry from both western and central-eastern Europe, evidence of long-distance mixing. Northern Spain appears to have been a refuge where western lineages survived the coldest part of the Ice Age.</p>
-  <p class="cool">Why it’s cool: we can now read human history from cave dirt.</p>
-</article>
-
-<article>
-  <img src="https://www.sciencedaily.com/images/1920/archimedes-screw-molecular-motor.webp" alt="Ilustração do motor molecular em forma de parafuso">
-  <h3><a href="https://www.sciencedaily.com/releases/2026/10/261030002940.htm" target="_blank" rel="noopener">Scientists shrink Archimedes’ screw to the size of a single molecule</a></h3>
-  <p class="source">ScienceDaily</p>
-  <p>Researchers from Augsburg, Copenhagen, the Weizmann Institute and others held a spiral-shaped molecule between two gold tips sharpened down to single atoms. Above a certain voltage, the flowing electrons make the molecule spin — and flipping the polarity reverses it, like a 2,000-year-old water screw run backwards. While it rotates, the molecule conducts electricity up to 100 times better, so the motion itself controls the current.</p>
-</article>
-
-<article>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-02T094543.429.jpg" alt="Céu estrelado">
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/02/novembro-tera-3-chuvas-de-meteoros-superlua" target="_blank" rel="noopener">Novembro terá chuvas de meteoros, superlua e uma estrela sumindo atrás da Lua</a></h3>
-  <p class="source">Só Notícia Boa</p>
-  <p>Já amanhã de madrugada (3/11), a Lua encobre a estrela Régulo — por volta das 4h40 em São Paulo e Curitiba. Depois vêm as Táuridas do Sul (noite de 4 para 5), a Lua nova no dia 9 (céu escuro), Marte e Júpiter quase colados na madrugada do dia 16, as Leônidas de 17 para 18 e a superlua no dia 24. Quase tudo dá para ver a olho nu, longe das luzes da cidade.</p>
-  <p class="cool">Por que é legal: um mês inteiro de desculpas para olhar para cima.</p>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/queens-university-belf.jpg" alt="Ilustração de Netuno e asteroides troianos">
+  <h3><a href="https://phys.org/news/2026-11-queen-university-belfast-students-neptune.html" target="_blank" rel="noopener">Neptune's elusive Trojan asteroids finally come into view</a></h3>
+  <p class="source">Phys.org</p>
+  <p>A team led by Queen's University Belfast used early data from the new Vera C. Rubin Observatory in Chile to find new long-lived members of Neptune's trailing Trojan cloud, roughly doubling the known population. For a decade these faint rocks were hidden against the bright centre of the Milky Way. Rubin's nine-year survey should turn up dozens to hundreds more.</p>
 </article>
 
 <h2>🌱 Natureza &amp; Animais</h2>
 
 <article>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Corys-shearwater-on-Wikipedia-by-Hobbyfotowiki-CC0.jpeg" alt="Cagarro, ave marinha">
-  <h3><a href="https://www.goodnewsnetwork.org/islands-near-portugal-turn-off-lights-to-protect-seabird-fledglings-every-oct/" target="_blank" rel="noopener">An Azores island turns off its lights so baby seabirds can find the sea</a></h3>
-  <p class="source">Good News Network</p>
-  <p>Young Cory’s shearwaters leave their nests at night and navigate toward the ocean — but town lights confuse them and many crash-land on the streets. So for the last five nights of October, tiny Corvo (400-some residents) switches off its public lighting from 9pm to 4am. Together with volunteers from the Portuguese bird society SPEA, the Azores have rescued more than 30,000 fledglings since 2015, about 6,000 of them on Corvo alone.</p>
-  <p class="cool">Why it’s cool: a whole island agreeing to sit in the dark for some birds.</p>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/10/ME_Expedicao-INT-31-especies-novas_site-CAPA.jpg" alt="Criatura marinha translúcida">
+  <h3><a href="https://super.abril.com.br/mundo-estranho/expedicao-submarina-encontra-31-especies-novas-nas-aguas-do-brasil-veja-fotos/" target="_blank" rel="noopener">Expedição submarina encontra 31 espécies novas nas águas do Brasil</a></h3>
+  <p class="source">Superinteressante</p>
+  <p>Em abril, 30 cientistas a bordo de um navio do Schmidt Ocean Institute vasculharam o mar entre Salvador e Fortaleza, entre 200 e 1.200 metros de profundidade — a chamada zona crepuscular. Voltaram com 31 espécies desconhecidas: nove águas-vivas, sete sifonóforos, sete ctenóforos com cílios cintilantes e até um delicado “verme-teia-de-fada”. As fotos feitas pelo robô submarino parecem joias de vidro.</p>
+  <p class="why">O maior ecossistema habitável da Terra ainda guarda surpresas bem aqui na nossa costa.</p>
 </article>
 
 <article>
-  <img src="https://scx1.b-cdn.net/csz/news/800a/2026/two-new-bandicoot-spec.jpg" alt="Bandicoot">
-  <h3><a href="https://phys.org/news/2026-11-bandicoot-species-trawling-museum-drawers.html" target="_blank" rel="noopener">Two new bandicoot species, discovered in museum drawers</a></h3>
-  <p class="source">Phys.org · The Conversation</p>
-  <p>Over ten years, Australian researchers combed through hundreds of bandicoot specimens in museums worldwide, combining DNA with careful skull measurements. They described the little brown bandicoot of South Australia — likely gone for a century — and elevated the New Guinea brown bandicoot to a full species. They also found the quenda once ranged as far as Adelaide and Kangaroo Island.</p>
-  <p class="cool">Why it’s cool: new species are still hiding in old cabinets.</p>
+  <img src="https://www.sciencedaily.com/images/1920/clay-robber-frog.webp" alt="Sapo da Mata Atlântica">
+  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261102202838.htm" target="_blank" rel="noopener">A 50-year-old mystery of vanishing frogs reveals a hidden killer</a></h3>
+  <p class="source">ScienceDaily</p>
+  <p>Between 1979 and 1982, frogs mysteriously crashed at the Boracéia field station in Brazil's Atlantic Forest. By testing more than 370 museum specimens, Smithsonian and Penn State researchers showed the chytrid fungus arrived just then. The happy part: recent surveys found 12 of the 17 species again, apparently now more tolerant of the fungus.</p>
+  <p class="why">Why it's cool: old museum jars solved a cold case — and the frogs came back.</p>
 </article>
 
 <article>
-  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/02133250/Mongabay_Thumbnail_ForestArchitects_Featured-338x512.jpg" alt="Morcegos abrigados sob uma folha dobrada">
-  <h3><a href="https://news.mongabay.com/short-article/2026/11/how-bats-can-be-forest-architects/" target="_blank" rel="noopener">How tiny bats act as architects of the Amazon forest</a></h3>
+  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/02074704/Nycticebus_bancanus_Fig3B-768x512.jpg" alt="Lóris-lento de Bangka">
+  <h3><a href="https://news.mongabay.com/short-article/2026/11/venomous-indonesian-primate-feared-extinct-still-clings-on-but-threats-persist/" target="_blank" rel="noopener">Venomous Indonesian primate feared extinct still clings on</a></h3>
   <p class="source">Mongabay</p>
-  <p>Some tiny Amazonian bats bite and fold big leaves into tents, hanging out in the understory. Their droppings are full of seeds from wild fruits, which local and Indigenous communities later grow for food. Researcher Bernal Rodríguez Herrera and his team are studying how these little gardeners could help forests regrow and feed people.</p>
+  <p>The Bangka slow loris hadn't appeared in scientific papers since around 1937 and was tagged “possibly extinct.” But a local rescue centre has taken in more than 90 of these big-eyed animals from backyards and plantations across all four districts of the Indonesian island. Researchers now say the tag should go — while warning that mining, palm oil and power lines still threaten it.</p>
+</article>
+
+<article>
+  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/03122155/Pic-1-Harmony-with-Wildlife-story-768x512.png" alt="Elefantes no Okavango">
+  <h3><a href="https://news.mongabay.com/short-article/2026/11/payment-scheme-in-botswana-pays-communities-to-coexist-with-wildlife/" target="_blank" rel="noopener">Payment scheme in Botswana pays communities to coexist with wildlife</a></h3>
+  <p class="source">Mongabay</p>
+  <p>Two tiny villages on the edge of the Okavango Delta put camera traps around their homes, and every elephant, hyena or leopard photographed earns money for a shared community fund. An elephant is worth the most. Villagers decide together how to spend it — a simple way to reward people who live alongside big animals.</p>
 </article>
 
 <h2>🧑‍🤝‍🧑 Histórias Humanas</h2>
 
 <article>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/foto_rapazes_SNB_800x560.png" alt="Arthur e Florian">
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/02/menino-brasileiro-salvo-doador-medula-ossea-alemanha" target="_blank" rel="noopener">Menino de Curitiba é salvo por doador de medula alemão e ganha um “irmão”</a></h3>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-03T082317.577.jpg" alt="Arthur Alencar Spuri com medalhas">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/03/brasileiro-16-anos-conquista-3-medalhas-internacionais" target="_blank" rel="noopener">Brasileiro de 16 anos conquista 3 medalhas internacionais em Economia, Física e Astronomia</a></h3>
   <p class="source">Só Notícia Boa</p>
-  <p>Arthur, de 9 anos, foi diagnosticado em 2023 com anemia de Fanconi, uma doença genética rara da medula. Sem doador compatível na família, os médicos acharam no registro internacional o alemão Florian Weiand, cadastrado como voluntário desde 2019 — e a medula viajou 10 mil km em menos de 24 horas. Neste ano as famílias começaram a conversar; Florian quer abraçar o menino e jogar cartas de Pokémon com ele.</p>
-  <p class="cool">Por que é legal: um cadastro feito anos antes, do outro lado do mundo, virou família.</p>
+  <p>Arthur Alencar Spuri, estudante de Fortaleza, levou ouro na Olimpíada Internacional de Economia, na China, com a maior pontuação já registrada no torneio — o primeiro sul-americano a liderar a classificação. Ainda ganhou prata em Física, na Colômbia, e em Astronomia, no Vietnã. O segredo? Cerca de cinco horas por dia refazendo provas antigas e estudando os próprios erros.</p>
+  <p class="why">Um ano inteiro de pódios, e ele ainda está no segundo ano do ensino médio.</p>
 </article>
 
 <article>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Bus-stop-kindness-Courtesy-of-TikTok-Teacher-and-Traveler.jpg" alt="Menina comemorando ao ver o banco no ponto de ônibus">
-  <h3><a href="https://www.goodnewsnetwork.org/girl-sitting-in-dirt-at-bus-stop-gets-surprise-bench-from-couple/" target="_blank" rel="noopener">A girl waiting in the dirt for her school bus gets a surprise bench</a></h3>
+  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg" alt="Xie Junwu andando de skate em cadeira de rodas">
+  <h3><a href="https://www.goodnewsnetwork.org/he-conquered-mountains-and-marathons-now-he-teaches-wheelchair-skateboarding-watch/" target="_blank" rel="noopener">This Wheelchair Skateboarding Teacher Already Conquered Mountains and Marathons</a></h3>
   <p class="source">Good News Network</p>
-  <p>Florida teachers Maren and David Douglass noticed on their camera that the middle-schooler whose bus stop is at the end of their driveway sat on the ground every morning. They installed a bench — and caught her little jump of joy when she saw it. She left a thank-you note (“now I don’t have to worry about dirt and bugs”), they added a tiny free library next to it, and she later left them flowers.</p>
+  <p>A fall from a tree at 19 left Xie Junwu paralysed from the waist down. Since then he has set a Guinness record for the longest wheelchair wheelie, climbed Mount Huangshan four times and finished 32 marathons. Now, in Nanchang, he runs what may be China's first wheelchair skateboarding school — and dreams of hosting the country's first competition.</p>
 </article>
 
 <article>
-  <h3><a href="https://www.goodnewsnetwork.org/high-school-fills-football-field-with-groceries-for-nj-food-banks/" target="_blank" rel="noopener">A high school fills an entire football field with groceries for food banks</a></h3>
-  <p class="source">Good News Network</p>
-  <p>Students at Howell High School, in New Jersey, took on the “100-Yard Food Drive Challenge” for the second year, filling their football field with donated food. They collected more than a quarter of a million pounds of groceries for local food banks — the biggest drive in the history of the nonprofit Dermer Dreams.</p>
-  <p class="cool">Why it’s cool: a field built for rivalry, turned into one long shared pantry.</p>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/old-watch.jpg" alt="Relógio antigo">
+  <h3><a href="https://phys.org/news/2026-11-sentimental-meaningful.html" target="_blank" rel="noopener">Using sentimental possessions makes them more meaningful, study finds</a></h3>
+  <p class="source">Phys.org</p>
+  <p>Grandpa's watch in a drawer or on your wrist? Across five studies, psychologists found that actually using cherished objects makes them more meaningful, not less. Regular use keeps the memory behind the object present, and that makes it feel more like part of who we are.</p>
+  <p class="why">Why it's cool: permission to drink from the good china on a Tuesday.</p>
 </article>
 
 <h2>🛠️ Tecnologia, História &amp; Curiosidades</h2>
 
 <article>
-  <img src="https://scx1.b-cdn.net/csz/news/800a/2026/researchers-at-the-uni.jpg" alt="Pesquisadores analisando amostras">
-  <h3><a href="https://phys.org/news/2026-10-year-mummy-yields-molecular-evidence.html" target="_blank" rel="noopener">A 2,700-year-old mummy head yields the first molecular evidence of aloe in Egyptian embalming</a></h3>
-  <p class="source">Phys.org</p>
-  <p>A Marburg University team of chemists and Egyptologists analyzed 24 objects, from mummy remains to old apothecary powders, and found aloe-linked compounds in a skull from the 8th century BC and in an 18th-century “mummy medicine.” They also re-read ancient Egyptian texts for a word that might mean aloe. Only two samples had the traces, so it’s a clue rather than proof — but it suggests medieval tales about aloe in mummies had older roots.</p>
+  <img src="https://jornal.usp.br/wp-content/uploads/2026/11/20261028_furcula-1024x538.jpg" alt="Fúrcula de ave">
+  <h3><a href="https://jornal.usp.br/ciencias/osso-da-sorte-estudo-sobre-origem-em-aves-e-repteis-da-pistas-sobre-evolucao-dos-dinossauros/" target="_blank" rel="noopener">“Osso da sorte”: estudo sobre origem em aves e répteis dá pistas sobre evolução dos dinossauros</a></h3>
+  <p class="source">Jornal da USP</p>
+  <p>Aquele ossinho em forma de forquilha que a gente puxa no frango de Natal é a fúrcula. Pesquisadores da USP de Ribeirão Preto acompanharam embriões de aves e répteis e viram que, na inhambu, ela nasce de três peças separadas que depois se fundem. A fusão pode ter começado nos primeiros dinossauros terópodes, muito antes de seus braços virarem asas.</p>
+  <p class="why">O osso da sorte é, literalmente, uma herança dos dinossauros.</p>
 </article>
 
 <article>
-  <img src="https://img.atlasobscura.com/vMJPc8iLIqANzACa8qexL5onklPTzMuIsyW9TPdSn8Q/rs:fill:300:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80NjUy/OTJlYy04YzRkLTRh/MzYtOTI4OC03NDU3/NDJkZjVmZWI0NGIx/YWNlYWRjMzZiMmYz/MzFfOTI1Q0ZBMjYt/QkM2Qi00QTZELTg3/Q0YtMTU5QjUxMDM1/RkM1XzFfMTA1X2Mu/anBlZw.jpg" alt="Museu da Lula Gigante">
-  <h3><a href="https://www.atlasobscura.com/places/giant-squid-museum" target="_blank" rel="noopener">The Giant Squid Museum, Luarca, Spain</a></h3>
-  <p class="source">Atlas Obscura</p>
-  <p>In the Asturian fishing town of Luarca, a small museum displays six giant squid alongside other creatures from the deep. A 2014 sea storm wrecked its original harborside building and kept it closed for eight years, until it reopened in a new home. It’s one of the few places on Earth to stand face to face with the animal behind the kraken legends.</p>
-  <p class="cool">Why it’s cool: sea monsters, but real, and in a quiet seaside town.</p>
+  <img src="https://th-thumbnailer.cdn-si-edu.com/EFLJx5gVMt4LnFbvFBDKFN07kCY=/420x240/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a0/f0/a0f097c9-8b61-4750-b992-4af6a4fada8e/akrotiri-ruins.png" alt="Ruínas de Akrotiri">
+  <h3><a href="https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/" target="_blank" rel="noopener">Greece Has Its Own Pompeii, and the Ruins Tell a Captivating Story of a Seafaring Bronze Age Society</a></h3>
+  <p class="source">Smithsonian Magazine</p>
+  <p>On Santorini, the town of Akrotiri was buried by ash when the Thera volcano erupted some 3,600 years ago. Under the ash, archaeologists found multi-storey houses, vivid frescoes of ships and swallows, and a remarkably sophisticated seafaring town. This piece walks through what the ruins reveal about the people who lived there.</p>
 </article>
 
 <article>
-  <img src="https://img.atlasobscura.com/_kfKbAlbRcxiWIX3hLBvhQaUV5orlh_Y8euoAU-hDr8/rs:fill:300:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNDIy/MDEyNS0xY2Q3LTRh/NmUtYmNjOC03YjJl/MDVkY2I5NDAzNzFj/MGE3MTIwYmRmODJl/MjNfMjAyNjA5MjRf/MTIyODA0LmpwZw.jpg" alt="Vitrais Tiffany">
-  <h3><a href="https://www.atlasobscura.com/places/st-johns-episcopal-church" target="_blank" rel="noopener">A small-town church with a complete set of Tiffany windows</a></h3>
-  <p class="source">Atlas Obscura</p>
-  <p>St. John’s Episcopal Church in Franklin, Pennsylvania, is one of only seven churches anywhere whose windows all came from Louis Comfort Tiffany’s studios. The stained glass glows with the opalescent colors Tiffany made famous. Visitors can drop in Tuesday to Friday, or book a guided tour.</p>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/10/SI_492_Oraculo_Comer_doce.jpg" alt="Doces e bebida">
+  <h3><a href="https://super.abril.com.br/coluna/oraculo/por-que-quando-comemos-algo-doce-a-bebida-doce-perde-o-gosto/" target="_blank" rel="noopener">Por que, quando comemos algo doce, a bebida doce perde o gosto?</a></h3>
+  <p class="source">Superinteressante</p>
+  <p>Culpa da adaptação: depois do primeiro impacto do doce, os neurônios do paladar diminuem o ritmo de disparo e o cérebro “se acostuma”. Aí o próximo doce parece sem graça — e um suco de limão parece mais azedo que o normal. A dica da Super é um gole de água entre um e outro.</p>
+  <p class="why">Uma boa desculpa para tomar o café sem açúcar depois do bolo.</p>
 </article>
 
 <h2>🎨 Arte &amp; Design</h2>
 
 <article>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-02T080456.449.jpg" alt="Foto Pandora: Via Láctea sobre sempre-vivas na Chapada dos Veadeiros">
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/02/brasileiro-ganha-1-lugar-mundial-fotografia-cerrado" target="_blank" rel="noopener">Foto do Cerrado vence prêmio mundial disputado por 177 países</a></h3>
-  <p class="source">Só Notícia Boa</p>
-  <p>O fotógrafo e geógrafo brasiliense Márcio Cabral levou o Grande Prêmio Global do Greenstorm Photography Festival com “Pandora”, um panorama de 180 graus feito com nove imagens na Chapada dos Veadeiros (GO). A foto mostra o arco da Via Láctea sobre um campo de sempre-vivas, as flores “chuveirinho” do Cerrado. Foram 14.513 fotos inscritas; o prêmio foi de US$ 10 mil.</p>
-  <p class="cool">Por que é legal: o Cerrado à noite, mostrado ao mundo como ele merece.</p>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/park-7.jpeg" alt="Pintura de GaHee Park">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/gahee-park-soft-shell-surreal-oil-paintings/" target="_blank" rel="noopener">Faceted Faces and Surreal Still Lifes Fill GaHee Park's Dreamy Paintings</a></h3>
+  <p class="source">Colossal</p>
+  <p>In “Soft Shell,” GaHee Park paints landscapes, figures and still lifes that melt into each other, with glassy-eyed women at the centre. The theme is the “containers” we build to feel safe, which never protect us completely, all handled with a dash of dark humour. The show is at Jessica Silverman in San Francisco until 19 December.</p>
 </article>
 
 <article>
-  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/10/double-2.jpg" alt="Imagem de Everything Twice">
-  <h3><a href="https://www.thisiscolossal.com/2026/10/everything-twice-cy-kuckenbaker-film/" target="_blank" rel="noopener">A Rare Disease and Analog Photography Merge in a Portrait of Self-Discovery</a></h3>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/gibson-1.jpeg" alt="Obra de Jeffrey Gibson">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/jeffrey-gibson-a-real-love-thing/" target="_blank" rel="noopener">Jeffrey Gibson's 'A Real Love Thing' Surveys a Decade of the Artist's Practice</a></h3>
   <p class="source">Colossal</p>
-  <p>As a kid, filmmaker Cy Kuckenbaker blamed his drooping eye on a snowboarding accident; years of tests later, he learned he was born with a rare disease. In the short film “Everything Twice,” he tells that story over West Coast landscapes shot with homemade cameras built from cardboard boxes and drugstore magnifying glasses — a slow process he took up to beat burnout.</p>
+  <p>Fifteen works from the last ten years bring together Gibson's bright abstract paintings, garment-like sculptures and textile collages full of glass beads, jingle cones and song lyrics. His Choctaw and Cherokee heritage runs through all of it, side by side with pop music and queer iconography. It's on at the Johns Hopkins Bloomberg Center in Washington, D.C., through 13 March.</p>
 </article>
 
 <h2>📜 Neste dia</h2>
-<article class="feature">
-  <h3><a href="https://en.wikipedia.org/wiki/Expedition_1" target="_blank" rel="noopener">2 de novembro de 2000: começa a presença humana ininterrupta no espaço</a></h3>
-  <p class="source">Wikipédia</p>
-  <p>Há exatos 26 anos, os três tripulantes da Expedição 1 chegaram à Estação Espacial Internacional para a primeira estadia longa. Desde aquele dia, nunca mais houve um momento sem gente morando lá em cima — uma geração inteira nasceu com a humanidade em órbita.</p>
-</article>
+<div class="box">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Gojira_1954_Japanese_poster.jpg" alt="Cartaz original de Godzilla, 1954">
+  <p><strong>3 de novembro de 1954</strong> — estreava no Japão <a href="https://en.wikipedia.org/wiki/Godzilla_(1954_film)" target="_blank" rel="noopener"><em>Godzilla</em></a>, de Ishirō Honda. O filme inventou a “suitmation”: o ator Haruo Nakajima vestia uma roupa de uns 100 kg e contracenava com cidades em miniatura, aguentando só uns três minutos por vez antes de quase desmaiar. Daí nasceu a franquia de cinema mais longa do mundo, com mais de 30 filmes, e Spielberg diz que ela inspirou <em>Jurassic Park</em>. Hoje também é o Dia da Cultura no Japão.</p>
+</div>
 
 <h2>📖 Leitura longa</h2>
-<article class="feature">
-  <img src="https://images.aeonmedia.co/images/e7ea39c8-e023-47fb-820f-7a6d68ed3928/essay-humpbacks.jpg?width=1200&amp;quality=75&amp;format=auto" alt="Baleias-jubarte">
-  <h3><a href="https://aeon.co/essays/the-self-making-world-of-jean-baptiste-lamarck" target="_blank" rel="noopener">The self-making world</a></h3>
-  <p class="source">Aeon · Jessica Riskin</p>
-  <p>Lamarck — the man who coined the word “biology” — is remembered mostly as the punchline about giraffes stretching their necks. Stanford historian Jessica Riskin argues his real idea was bigger: living things actively shape themselves and their surroundings through what they do. She traces how that view was pushed aside, and how epigenetics, lizard studies, niche construction and the hunting traditions of humpback whales are bringing it back.</p>
-  <p class="cool">Para ler com calma (~4.600 palavras, ou 29 minutos em áudio): uma visão mais viva da evolução.</p>
+<article class="box">
+  <img src="https://www.quantamagazine.org/wp-content/uploads/2026/10/Qualia-Muon-Fusion-cr.Oleg-Borodin-Default.webp" alt="Ilustração de fusão catalisada por múons">
+  <h3><a href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Is There Anything Left in the Dream of Cold Fusion?</a></h3>
+  <p class="source">Quanta Magazine</p>
+  <p>Forget the 1989 lab-bench scandal: there is a real kind of fusion that happens at room temperature. When a muon, the electron's heavy cousin, takes an electron's place, it pulls two hydrogen nuclei close enough to fuse, then drifts off to do it again. It will probably never power your house, but physicists in Japan, Italy, France and at CERN use these shrunken exotic atoms as ultra-precise probes of the laws of nature. It's a lovely story about a dream that failed and turned out useful anyway.</p>
 </article>
 
 <footer>
-  Pronto, é isso por hoje ☕ <a href="editions/2026-11-01.html">← Edição anterior (1 de novembro)</a>
+  <p>Pronto, é isso por hoje ☕</p>
+  <a href="editions/2026-11-02.html">← Edição anterior (2 de novembro)</a>
 </footer>
 
 </main>
