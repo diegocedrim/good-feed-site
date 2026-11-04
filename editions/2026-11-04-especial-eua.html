@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good Feed — ONDA AZUL 🌊</title>
+<style>
+  :root {
+    --bg: #faf6ef;
+    --card: #fffdf8;
+    --text: #2b2723;
+    --muted: #7a7065;
+    --accent: #a0522d;
+    --rule: #e8dfd2;
+    --cool: #5d7a5a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1a17;
+      --card: #24211d;
+      --text: #ebe4d8;
+      --muted: #a39887;
+      --accent: #e0a070;
+      --rule: #3a352e;
+      --cool: #9cbf97;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 19px;
+    line-height: 1.65;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
+  header { text-align: center; margin-bottom: 48px; }
+  header h1 { font-size: 2.6em; font-weight: normal; letter-spacing: 0.02em; margin: 0; }
+  header .greeting { font-size: 1.05em; margin: 0; }
+  h2 {
+    font-size: 1.05em; font-weight: normal; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--accent); border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px; margin: 56px 0 24px;
+  }
+  article { margin: 0 0 40px; }
+  article h3 { font-size: 1.25em; font-weight: normal; line-height: 1.3; margin: 0 0 4px; }
+  article h3 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  article h3 a:hover { border-bottom-color: var(--accent); }
+  .source { font-size: 0.8em; color: var(--muted); font-style: italic; margin: 0 0 10px; }
+  article p { margin: 0 0 10px; }
+  .why { font-size: 0.9em; color: var(--cool); }
+  img { display: block; width: 100%; height: auto; border-radius: 6px; margin: 12px 0 14px; background: var(--rule); }
+  figure { margin: 0; }
+  figcaption { font-size: 0.9em; color: var(--muted); }
+  footer { text-align: center; margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); }
+  a { color: var(--accent); }
+  @media (max-width: 480px) {
+    body { font-size: 17.5px; }
+    main { padding: 32px 18px 48px; }
+    header h1 { font-size: 2.2em; }
+  }
+</style>
+<style>
+  :root { --blue: #1d4ed8; --sky: #38bdf8; --navy: #1e3a8a; --red: #c8102e; }
+  @media (prefers-color-scheme: dark) { :root { --blue: #60a5fa; --sky: #7dd3fc; --navy: #93c5fd; --red: #ff6b6b; } }
+  body { overflow-x: hidden; }
+  a { color: var(--blue); }
+  header h1.wave {
+    font-size: 4.2em; font-weight: bold; letter-spacing: 0.04em; line-height: 1; margin: 6px 0 4px;
+    background: linear-gradient(90deg, var(--navy), var(--blue), var(--sky));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .kicker { font-size: 0.8em; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 0; }
+  .badge { display: inline-block; font-size: 0.75em; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: #1d4ed8; border-radius: 999px; padding: 3px 14px; margin-bottom: 14px; }
+  .flags { font-size: 1.6em; letter-spacing: 0.2em; margin: 10px 0 0; }
+  h2 { color: var(--blue); border-bottom: 3px dotted var(--sky); }
+  .numbers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0 40px; }
+  .numbers div { background: var(--card); border: 2px solid var(--blue); border-radius: 12px; padding: 14px 16px; }
+  .numbers div:nth-child(2), .numbers div:nth-child(3) { border-color: var(--sky); }
+  .numbers b { display: block; font-size: 1.7em; color: var(--text); line-height: 1.2; }
+  .numbers span { font-size: 0.85em; color: var(--muted); }
+  blockquote { margin: 0 0 40px; padding: 18px 22px; border-left: 5px solid var(--blue); background: var(--card); border-radius: 0 10px 10px 0; font-size: 1.2em; font-style: italic; }
+  blockquote cite { display: block; font-size: 0.7em; font-style: normal; color: var(--muted); margin-top: 8px; }
+  .why { color: var(--blue); }
+  .why::before { content: "🌊 "; }
+  .bolso .why::before { content: "😂 "; }
+  .bolso { background: var(--card); border: 2px dashed var(--sky); border-radius: 12px; padding: 18px 18px 8px; }
+  .note { font-size: 0.8em; color: var(--muted); font-style: italic; }
+  .waves { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 10; }
+  .waves i { position: absolute; top: -20px; width: 9px; height: 14px; border-radius: 2px; opacity: 0.85; animation: fall 4.5s linear forwards; }
+  .waves i:nth-child(3n) { background: var(--blue); }
+  .waves i:nth-child(3n+1) { background: var(--sky); }
+  .waves i:nth-child(3n+2) { background: #fff; outline: 1px solid var(--sky); }
+  @keyframes fall { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .waves { display: none; } }
+</style>
+</head>
+<body>
+<div class="waves" aria-hidden="true">
+  <i style="left:3%;animation-delay:0s"></i><i style="left:9%;animation-delay:.6s"></i><i style="left:15%;animation-delay:.2s"></i><i style="left:21%;animation-delay:1.1s"></i><i style="left:27%;animation-delay:.4s"></i><i style="left:33%;animation-delay:.9s"></i><i style="left:39%;animation-delay:.1s"></i><i style="left:45%;animation-delay:1.3s"></i><i style="left:51%;animation-delay:.5s"></i><i style="left:57%;animation-delay:.8s"></i><i style="left:63%;animation-delay:0s"></i><i style="left:69%;animation-delay:1.2s"></i><i style="left:75%;animation-delay:.3s"></i><i style="left:81%;animation-delay:.7s"></i><i style="left:87%;animation-delay:1s"></i><i style="left:93%;animation-delay:.2s"></i><i style="left:97%;animation-delay:1.4s"></i><i style="left:12%;animation-delay:1.6s"></i><i style="left:48%;animation-delay:1.8s"></i><i style="left:72%;animation-delay:1.5s"></i>
+</div>
+<main>
+
+<header>
+  <span class="badge">Edição especial</span>
+  <p class="kicker">Good Feed · quarta-feira, 4 de novembro de 2026</p>
+  <h1 class="wave">ONDA AZUL</h1>
+  <p class="flags">🇺🇸 🌊 💙</p>
+  <p class="greeting">Lá vamos nós de novo: a regra de "nada de política" tirou a segunda folga em dez dias. Depois do tetra aqui, os americanos resolveram fazer a deles. Os democratas levaram a Câmara, o Senado e a maioria dos governos estaduais. E o estado que mais chamou atenção foi justamente o Texas. Pega o café, que hoje tem fofoca internacional.</p>
+</header>
+
+<h2>⭐ O PT ganhou no Texas</h2>
+
+<figure>
+  <a href="https://aloalobahia.com/noticias/2026/11/04/lar-de-eduardo-bolsonaro-texas-nos-eua-sera-governado-pelo-pt-entenda/" target="_blank" rel="noopener"><img src="https://aloalobahia.com/wp-content/uploads/2026/11/MixCollage-04-Nov-2026-01-03-PM-7867.jpg" alt="Montagem sobre a vitória democrata no Texas" loading="lazy"></a>
+  <figcaption>Estrela, a sigla "PT", tudo azul e branco. Calma, não é o que você está pensando. <em>(Alô Alô Bahia)</em></figcaption>
+</figure>
+
+<article>
+  <h3><a href="https://aloalobahia.com/noticias/2026/11/04/lar-de-eduardo-bolsonaro-texas-nos-eua-sera-governado-pelo-pt-entenda/" target="_blank" rel="noopener">Lar de Eduardo Bolsonaro nos EUA, Texas será governado pelo PT; entenda</a></h3>
+  <p class="source">Alô Alô Bahia</p>
+  <p>O "PT" do Texas é o <strong>Progress Texas</strong>, um grupo progressista sem fins lucrativos fundado em 2010. O logo dele é uma estrela com as letras P e T. Não tem nenhuma ligação com o partido brasileiro, é só uma coincidência de nome e de visual. Mas a internet brasileira não perdoou: no dia em que Gina Hinojosa derrotou Greg Abbott e James Talarico virou senador, o Texas "ficou petista".</p>
+  <p class="why">Não tem ligação nenhuma. Mas a estrela, a sigla, a vitória... a gente só está comentando.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nbcnews.com/politics/2026-election/live-blog/election-results-house-senate-trump-live-updates-rcna607376" target="_blank" rel="noopener">A political earthquake in Texas</a></h3>
+  <p class="source">NBC News</p>
+  <img src="https://media-cldnry.s-nbcnews.com/image/upload/c_fill,g_auto,w_2500,h_1667/rockcms/2026-11/261104-james-talarico-texas-mn-1100-2ab7b8.jpg" alt="James Talarico celebrates his Senate victory in Texas" loading="lazy">
+  <p>James Talarico beat Ken Paxton and became the first Democrat elected to the Senate from Texas since 1988. At 37, he'll be the youngest member of the Senate. Gina Hinojosa beat Greg Abbott and will be Texas's first Hispanic governor. NBC says it's the Texas GOP's first statewide loss in more than 30 years. Trump had carried the state by almost 14 points two years ago.</p>
+  <p class="why">"Tonight, we defeated Goliath." — Talarico. That's an understatement.</p>
+</article>
+
+<h2>🇧🇷✈️ Enquanto isso, os Bolsonaro...</h2>
+
+<div class="bolso">
+<article>
+  <h3><a href="https://www.brasil247.com/brasil/democratas-vencem-em-condado-no-texas-onde-vive-eduardo-bolsonaro/" target="_blank" rel="noopener">Democratas vencem em condado no Texas onde vive Eduardo Bolsonaro</a></h3>
+  <p class="source">Brasil 247, com números do Texas Tribune</p>
+  <p>Eduardo mora nos EUA desde fevereiro de 2025, em Southlake, no condado de Tarrant. Segundo o Intercept, a casa vale uns R$ 6 milhões. Na terça, Tarrant votou 58,9% em Talarico contra 39,5% de Paxton, e 56,6% em Hinojosa contra 42% de Abbott. Os democratas ganharam todas as disputas estaduais e locais no condado. A juíza eleita, Alisa Simmons, é a primeira democrata a comandar o condado desde 1986.</p>
+  <p class="why">Atravessou um continente para fugir do PT e o PT foi morar na rua dele. Tipo sogra: não adianta mudar de endereço.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.itatiaia.com.br/politica/flavio-bolsonaro-se-encontra-com-eduardo-nos-eua-apos-deixar-o-brasil/" target="_blank" rel="noopener">Flávio Bolsonaro se encontra com Eduardo nos EUA após deixar o Brasil</a></h3>
+  <p class="source">Itatiaia / CNN Brasil</p>
+  <p>Dois dias depois de perder para Lula, Flávio chegou aos Estados Unidos com a mulher e as filhas e encontrou o irmão na Flórida. Pouco antes, tinha postado um vídeo dizendo que não pretendia sair do país. Moraes havia mandado entregar os passaportes em 24 horas. Eles não foram entregues, e a PF cancelou os documentos.</p>
+  <p class="why">Fugiu do Lula e, uma semana depois, os democratas tomaram o Congresso. Pelo menos a Flórida continuou vermelha. Por enquanto.</p>
+</article>
+
+<article>
+  <h3><a href="https://piauihoje.com/noticias/mundo/eleicao-de-democratas-pode-por-fim-a-vida-boa-de-eduardo-e-flavio-bolsonaro-nos-eua-470176.html" target="_blank" rel="noopener">Eleição de democratas pode pôr fim à vida boa de Eduardo e Flávio nos EUA</a></h3>
+  <p class="source">Piauí Hoje</p>
+  <p>Pelo menos 25 deputados democratas já tinham pedido formalmente a deportação dos irmãos, e todos foram reeleitos. A deputada Pramila Jayapal diz que os democratas querem investigar a proteção que o governo Trump deu aos dois. Deportação é decisão do Executivo, então ninguém vai fazer as malas amanhã. Mas, com o Congresso nas mãos dos democratas, as perguntas vão ser feitas em audiência, com microfone ligado.</p>
+  <p class="why">Placar dos que pediram a deportação: 25 reeleitos, 0 derrotados. Goleada.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.diariodocentrodomundo.com.br/eleicoes-nos-eua-virada-a-esquerda-no-texas-ameaca-refugio-de-eduardo-e-flavio-bolsonaro/" target="_blank" rel="noopener">Virada à esquerda no Texas ameaça refúgio de Eduardo e Flávio Bolsonaro</a></h3>
+  <p class="source">Diário do Centro do Mundo</p>
+  <img src="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2026/11/casabranca_vendidos.webp" alt="Eduardo e Flávio Bolsonaro em frente à Casa Branca" loading="lazy">
+  <p>Antes da eleição, até Ted Cruz já tinha avisado: "Podemos perder o Texas". O texto lembra que a virada não muda sozinha a situação migratória dos irmãos, que agora passam a fazer política num ambiente bem menos amigo.</p>
+  <p class="why">Foto em frente à Casa Branca. Ela continua lá. O Congresso em volta é que mudou de cor.</p>
+</article>
+<p class="note">Os comentários com 😂 são piada do editor. As notícias têm link para a fonte.</p>
+</div>
+
+<h2>🗳️ O placar</h2>
+<div class="numbers">
+  <div><b>54+</b><span>cadeiras no Senado, com 7 viradas. Alasca e Mississippi ainda em contagem</span></div>
+  <div><b>250+</b><span>cadeiras projetadas na Câmara. A maior maioria em quase 20 anos</span></div>
+  <div><b>28</b><span>governadores democratas, a primeira maioria em 16 anos</span></div>
+  <div><b>5</b><span>governos virados: Texas, Ohio, Geórgia, Iowa e Nevada</span></div>
+</div>
+<p class="note">Os números são projeções da apuração da madrugada de quarta (CBS, NBC, AP). Ainda podem mudar um pouco.</p>
+
+<h2>🌊 A noite</h2>
+
+<article>
+  <h3><a href="https://www.cbsnews.com/live-updates/election-day-2026-midterms/" target="_blank" rel="noopener">Seven Senate seats flipped, including Susan Collins's</a></h3>
+  <p class="source">CBS News</p>
+  <p>Democrats flipped Texas, Kansas, Ohio (Sherrod Brown is back), Iowa, South Carolina, North Carolina, and Maine. In Maine, Troy Jackson unseated Susan Collins. "We did it! Working people did it!" Schumer's summary: "against all odds, we Democrats have won the Senate."</p>
+  <p class="why">South Carolina. Kansas. Texas. Read that list again, slowly.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nbcnews.com/politics/2026-election/live-blog/election-results-house-senate-trump-live-updates-rcna607376" target="_blank" rel="noopener">Kansas elects a Democratic senator for the first time since 1932</a></h3>
+  <p class="source">NBC News</p>
+  <img src="https://media-cldnry.s-nbcnews.com/image/upload/c_fill,g_auto,w_2500,h_1667/rockcms/2026-11/261104-dems-rs-8f7fb3.jpg" alt="Democrats celebrate at a watch party in Kansas" loading="lazy">
+  <p>Adam Hamilton beat Sen. Roger Marshall. The last time Kansas sent a Democrat to the Senate, Franklin Roosevelt was winning his first election. "We are not flyover country. We are the heart of America."</p>
+  <p class="why">94 years. Brazil won its first World Cup after that.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nbcnews.com/politics/2026-election/live-blog/election-results-house-senate-trump-live-updates-rcna607376" target="_blank" rel="noopener">"Michigan, we did it!"</a></h3>
+  <p class="source">NBC News</p>
+  <img src="https://media-cldnry.s-nbcnews.com/image/upload/c_fill,g_auto,w_2500,h_1667/rockcms/2026-11/261104-michigan-3-rs-afd89c.jpg" alt="Supporters greet Abdul El-Sayed in Detroit" loading="lazy">
+  <p>Abdul El-Sayed held Michigan's open seat against Mike Rogers and will be the first Muslim U.S. senator. Supporters packed downtown Detroit to greet him.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nbcnews.com/politics/2026-election/live-blog/election-results-house-senate-trump-live-updates-rcna607376" target="_blank" rel="noopener">"We ran on affordability. We won on affordability."</a></h3>
+  <p class="source">NBC News</p>
+  <img src="https://media-cldnry.s-nbcnews.com/image/upload/c_fill,g_auto,w_2500,h_1667/rockcms/2026-11/261104-Hakeem-Jeffries-rs-358857.jpg" alt="Hakeem Jeffries speaks after the House projection" loading="lazy">
+  <p>Hakeem Jeffries is on track to be the first Black Speaker of the House, and Pelosi has already endorsed him. He called the result "a stunning rebuke for MAGA extremism." Mike Johnson told his staff he won't run for GOP leader again.</p>
+  <p class="why">Grocery prices won the election. As they do.</p>
+</article>
+
+<h2>🏛️ Primeiras vezes</h2>
+
+<article>
+  <h3><a href="https://stateline.org/2026/11/04/democrats-set-to-win-majority-of-governorships-for-the-first-time-in-16-years/" target="_blank" rel="noopener">Democrats win majority of governorships for the first time in 16 years</a></h3>
+  <p class="source">Stateline</p>
+  <p>Keisha Lance Bottoms will be Georgia's first Black governor and the first Black woman to govern any U.S. state. Aaron Ford will be Nevada's first Black governor, so for the first time several Black governors will serve at once. Amy Acton beat Vivek Ramaswamy and becomes Ohio's first elected woman governor. At least 17 women will be governors next year, a record. In Congress, 29-year-old Melat Kiros becomes the first Gen Z woman elected.</p>
+  <p class="why">Bottoms called it "a tsunami." Fair.</p>
+</article>
+
+<blockquote>
+  "Tonight, we defeated Goliath."
+  <cite>James Talarico, Texas, madrugada de 4 de novembro</cite>
+</blockquote>
+
+<footer>
+  <p>Pronto, é isso por hoje ☕ … e que semana! 🇧🇷❤️🇺🇸💙</p>
+  <a href="2026-11-04.html">← Edição normal de 4 de novembro</a> · <a href="2026-10-25-especial-lula.html">🎉 Edição especial do tetra</a>
+</footer>
+
+</main>
+</body>
+</html>
