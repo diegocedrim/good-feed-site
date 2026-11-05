@@ -87,6 +87,11 @@
   .why::before { content: "🌊 "; }
   .bolso .why::before { content: "😂 "; }
   .bolso { background: var(--card); border: 2px dashed var(--sky); border-radius: 12px; padding: 18px 18px 8px; }
+  .toon { margin: 0 0 36px; text-align: center; }
+  .toon svg { display: block; width: 100%; height: auto; max-width: 420px; margin: 0 auto 6px; }
+  .toons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 36px; }
+  .toons .toon { margin: 0; }
+  @media (max-width: 420px) { .toons { grid-template-columns: 1fr; } }
   .note { font-size: 0.8em; color: var(--muted); font-style: italic; }
   .waves { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 10; }
   .waves i { position: absolute; top: -20px; width: 9px; height: 14px; border-radius: 2px; opacity: 0.85; animation: fall 4.5s linear forwards; }
@@ -140,21 +145,71 @@
   <h3><a href="https://www.brasil247.com/brasil/democratas-vencem-em-condado-no-texas-onde-vive-eduardo-bolsonaro/" target="_blank" rel="noopener">Democratas vencem em condado no Texas onde vive Eduardo Bolsonaro</a></h3>
   <p class="source">Brasil 247, com números do Texas Tribune</p>
   <p>Eduardo mora nos EUA desde fevereiro de 2025, em Southlake, no condado de Tarrant. Segundo o Intercept, a casa vale uns R$ 6 milhões. Na terça, Tarrant votou 58,9% em Talarico contra 39,5% de Paxton, e 56,6% em Hinojosa contra 42% de Abbott. Os democratas ganharam todas as disputas estaduais e locais no condado. A juíza eleita, Alisa Simmons, é a primeira democrata a comandar o condado desde 1986.</p>
-  <p class="why">Atravessou um continente para fugir do PT e o PT foi morar na rua dele. Tipo sogra: não adianta mudar de endereço.</p>
+  <p>Ele diz em público que mora de aluguel e está passando dificuldade financeira. Em julho, ganhou o green card do governo Trump.</p>
+  <p class="why">Atravessou um continente para fugir do PT, escolheu o estado mais vermelho do mapa e, um ano e meio depois, o PT está na porta dele. Green card na mão, Texas azul na janela. Pelo menos combina.</p>
 </article>
+
+<figure class="toon">
+  <svg viewBox="0 0 320 260" role="img" aria-label="Desenho: mapa do Texas todo azul, com uma estrela PT e uma casinha marcada 'Southlake: você está aqui, Eduardo'">
+    <path d="M70 12 L122 12 L122 88 L150 96 L180 92 L210 100 L238 98 L242 150 L246 188 L222 210 L198 232 L186 258 L160 250 L140 222 L118 196 L98 178 L78 182 L62 170 L48 150 L30 132 L12 118 L70 118 Z" fill="var(--blue)" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="110,128 116,145 134,145 120,156 125,173 110,163 95,173 100,156 86,145 104,145" fill="#fff"/>
+    <text x="110" y="153" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="11" fill="var(--blue)">PT</text>
+    <g transform="translate(196 104)">
+      <polygon points="0,10 12,0 24,10" fill="var(--red)"/>
+      <rect x="3" y="10" width="18" height="13" fill="#fff" stroke="var(--navy)" stroke-width="1.5"/>
+      <rect x="10" y="15" width="5" height="8" fill="var(--navy)"/>
+    </g>
+    <line x1="220" y1="112" x2="250" y2="74" stroke="var(--muted)" stroke-width="1.5"/>
+    <text x="312" y="52" text-anchor="end" font-family="Georgia,serif" font-size="12" fill="var(--text)">Southlake, TX</text>
+    <text x="312" y="66" text-anchor="end" font-family="Georgia,serif" font-style="italic" font-size="11" fill="var(--muted)">você está aqui, Eduardo</text>
+    <text x="40" y="236" font-family="Georgia,serif" font-size="22">🤠💧</text>
+  </svg>
+  <figcaption>Mapa atualizado do refúgio. Desenho do Good Feed.</figcaption>
+</figure>
 
 <article>
   <h3><a href="https://www.itatiaia.com.br/politica/flavio-bolsonaro-se-encontra-com-eduardo-nos-eua-apos-deixar-o-brasil/" target="_blank" rel="noopener">Flávio Bolsonaro se encontra com Eduardo nos EUA após deixar o Brasil</a></h3>
   <p class="source">Itatiaia / CNN Brasil</p>
   <p>Dois dias depois de perder para Lula, Flávio chegou aos Estados Unidos com a mulher e as filhas e encontrou o irmão na Flórida. Pouco antes, tinha postado um vídeo dizendo que não pretendia sair do país. Moraes havia mandado entregar os passaportes em 24 horas. Eles não foram entregues, e a PF cancelou os documentos.</p>
-  <p class="why">Fugiu do Lula e, uma semana depois, os democratas tomaram o Congresso. Pelo menos a Flórida continuou vermelha. Por enquanto.</p>
+  <p class="why">O "não vou sair do país" durou menos que o passaporte. E a fuga deu azar: uma semana depois de ele chegar, o Congresso americano virou azul. Pelo menos a Flórida continuou vermelha. Se a onda chegar lá também, o próximo refúgio é o Alasca, que ainda está em contagem.</p>
 </article>
+
+<div class="toons">
+  <figure class="toon">
+    <svg viewBox="0 0 200 150" role="img" aria-label="Desenho: passaporte brasileiro com carimbo vermelho CANCELADO">
+      <rect x="45" y="12" width="110" height="126" rx="8" fill="#1f5e3a" stroke="#123b24" stroke-width="2"/>
+      <circle cx="100" cy="62" r="22" fill="none" stroke="#e9c46a" stroke-width="2"/>
+      <text x="100" y="67" text-anchor="middle" font-size="16">🇧🇷</text>
+      <text x="100" y="110" text-anchor="middle" font-family="Georgia,serif" font-size="11" letter-spacing="2" fill="#e9c46a">PASSAPORTE</text>
+      <g transform="rotate(-18 100 78)">
+        <rect x="28" y="62" width="144" height="34" rx="4" fill="none" stroke="var(--red)" stroke-width="4"/>
+        <text x="100" y="87" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="20" fill="var(--red)">CANCELADO</text>
+      </g>
+    </svg>
+    <figcaption>Era pra entregar em 24h.</figcaption>
+  </figure>
+  <figure class="toon">
+    <svg viewBox="0 0 200 150" role="img" aria-label="Desenho: GPS recalculando rota, Brasil riscado, Texas riscado, Flórida com interrogação, Alasca talvez">
+      <rect x="20" y="10" width="160" height="130" rx="14" fill="var(--card)" stroke="var(--muted)" stroke-width="3"/>
+      <rect x="30" y="20" width="140" height="22" rx="4" fill="var(--blue)"/>
+      <text x="100" y="35" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#fff">recalculando rota...</text>
+      <g font-family="Georgia,serif" font-size="12" fill="var(--text)">
+        <text x="40" y="62">Brasil</text><line x1="38" y1="58" x2="80" y2="58" stroke="var(--red)" stroke-width="2"/>
+        <text x="40" y="82">Texas</text><line x1="38" y1="78" x2="76" y2="78" stroke="var(--red)" stroke-width="2"/>
+        <text x="40" y="102">Flórida ⚠️</text>
+        <text x="40" y="122">Alasca?</text>
+      </g>
+      <text x="140" y="112" font-size="26">🧭</text>
+    </svg>
+    <figcaption>Próxima parada: onde ainda não contaram os votos.</figcaption>
+  </figure>
+</div>
 
 <article>
   <h3><a href="https://piauihoje.com/noticias/mundo/eleicao-de-democratas-pode-por-fim-a-vida-boa-de-eduardo-e-flavio-bolsonaro-nos-eua-470176.html" target="_blank" rel="noopener">Eleição de democratas pode pôr fim à vida boa de Eduardo e Flávio nos EUA</a></h3>
   <p class="source">Piauí Hoje</p>
   <p>Pelo menos 25 deputados democratas já tinham pedido formalmente a deportação dos irmãos, e todos foram reeleitos. A deputada Pramila Jayapal diz que os democratas querem investigar a proteção que o governo Trump deu aos dois. Deportação é decisão do Executivo, então ninguém vai fazer as malas amanhã. Mas, com o Congresso nas mãos dos democratas, as perguntas vão ser feitas em audiência, com microfone ligado.</p>
-  <p class="why">Placar dos que pediram a deportação: 25 reeleitos, 0 derrotados. Goleada.</p>
+  <p class="why">Placar dos que pediram a deportação: 25 reeleitos, 0 derrotados. Em dez dias, a família acompanhou duas eleições, em dois países, e perdeu as duas. Nem estava concorrendo na segunda.</p>
 </article>
 
 <article>
