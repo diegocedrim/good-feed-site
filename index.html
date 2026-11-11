@@ -3,69 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Good Feed — 10 de novembro de 2026</title>
+<title>Good Feed — 11 de novembro de 2026</title>
 <style>
   :root {
     --bg: #faf6ef;
-    --text: #2b2724;
-    --muted: #7a6f64;
+    --fg: #2b2620;
+    --muted: #7a6f62;
     --accent: #a0522d;
-    --rule: #e6dccd;
-    --card: #fffdf9;
+    --card: #fffdf8;
+    --rule: #e7dfd2;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #1d1a17;
-      --text: #e9e2d8;
-      --muted: #a89c8e;
+      --bg: #1c1a17;
+      --fg: #e9e2d6;
+      --muted: #a69b8c;
       --accent: #e0a070;
-      --rule: #3a342e;
-      --card: #24201c;
+      --card: #24211d;
+      --rule: #3a352f;
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
-    color: var(--text);
-    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-    font-size: 19px;
+    color: var(--fg);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
     line-height: 1.65;
   }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
-  header { text-align: center; margin-bottom: 48px; }
-  header h1 { font-size: 2.6em; margin: 0; letter-spacing: -0.01em; font-weight: normal; }
-  header .date { color: var(--muted); font-style: italic; margin: 6px 0 18px; }
-  header .greeting { margin: 0 auto; max-width: 30em; }
+  main { max-width: 680px; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  header h1 { font-size: 2.6rem; margin: 0; letter-spacing: 0.01em; }
+  header .date { color: var(--muted); font-style: italic; margin: 0.3rem 0 1rem; }
+  header .greet { font-size: 1.05rem; }
   h2 {
-    font-size: 1.05em;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--accent);
-    border-top: 1px solid var(--rule);
-    padding-top: 28px;
-    margin: 52px 0 8px;
-    font-weight: normal;
+    font-size: 1.35rem;
+    margin: 3rem 0 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
   }
-  article { margin: 28px 0 40px; }
-  article h3 { font-size: 1.3em; line-height: 1.3; margin: 0 0 4px; font-weight: normal; }
-  a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
-  a:hover { color: var(--accent); }
-  .source { color: var(--muted); font-size: 0.82em; margin: 0 0 12px; font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; }
-  article p { margin: 0 0 10px; }
-  .why { color: var(--muted); font-style: italic; font-size: 0.95em; }
-  figure { margin: 0 0 14px; }
-  img { display: block; width: 100%; height: auto; border-radius: 6px; background: var(--rule); }
-  .block { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 22px 24px; margin: 20px 0 36px; }
-  .block h3 { margin-top: 0; font-size: 1.3em; line-height: 1.3; font-weight: normal; margin-bottom: 4px; }
-  .block p { margin: 0 0 10px; }
-  footer { text-align: center; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 56px; padding-top: 32px; font-size: 1.05em; }
+  article { margin: 0 0 2.2rem; }
+  article img, figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 0.8rem;
+    background: var(--rule);
+  }
+  article h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 0.2rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h3 a { color: var(--fg); }
+  h3 a:hover { color: var(--accent); }
+  .src { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.6rem; }
+  article p { margin: 0 0 0.6rem; }
+  .why { font-style: italic; color: var(--muted); font-size: 0.95rem; }
+  .why::before { content: "✦ "; color: var(--accent); font-style: normal; }
+  figure { margin: 0; }
+  figcaption { color: var(--muted); font-size: 0.95rem; font-style: italic; }
+  .box { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 1.2rem 1.3rem; }
+  footer {
+    text-align: center;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
   @media (max-width: 480px) {
-    body { font-size: 17.5px; }
-    main { padding: 32px 16px 48px; }
-    header h1 { font-size: 2.1em; }
-    .block { padding: 18px 16px; }
+    body { font-size: 17px; }
+    header h1 { font-size: 2.1rem; }
+    main { padding-top: 1.8rem; }
   }
 </style>
 </head>
@@ -74,172 +84,147 @@
 
 <header>
   <h1>Good Feed</h1>
-  <p class="date">terça-feira, 10 de novembro de 2026</p>
-  <p class="greeting">Bom dia, Diego! Hoje tem a ciência de por que a gente aprende a gostar de café amargo, um deserto que floresceu e um rapaz que viveu 35 dias com dois corações. Pega a xícara e vai devagar.</p>
+  <p class="date">quarta-feira, 11 de novembro de 2026</p>
+  <p class="greet">Bom dia, Diego! Pegue o café: hoje tem vulcões em Marte, vaga-lumes em Bali e chuva de meteoros no céu à noite. 🌤️</p>
 </header>
 
-<!-- ================= FOTO DO DIA ================= -->
 <h2>🌌 Foto do dia</h2>
-<div class="block">
-  <figure><img src="https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Moonsaturn6_Ortu_2124.jpg" alt="Saturno com seus anéis aparecendo logo acima da borda curva da Lua" loading="lazy"></figure>
-  <h3><a href="https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/" target="_blank" rel="noopener">Saturn Behind the Moon</a></h3>
-  <p class="source">NASA · Astronomy Picture of the Day · Roberto Ortu</p>
-  <p>Saturn, rings and all, peeks over the Moon's edge just before slipping behind it, photographed from Sardinia during a 2025 occultation. The little bright dot nearby isn't one of Saturn's moons but the star 85 Aquarii.</p>
-</div>
+<figure>
+  <a href="https://science.nasa.gov/image-article/apod-2026-november-11-ngc-4449-small-galaxy-big-impact/" target="_blank" rel="noopener"><img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/irregular/NGC%204449.jpg?w=2048&amp;h=1320&amp;fit=clip&amp;crop=faces%2Cfocalpoint" alt="Galáxia anã NGC 4449 fotografada pelo Hubble"></a>
+  <figcaption>NGC 4449, uma galáxia anã com só alguns bilhões de estrelas, mas com ventos estelares tão fortes que espalham elementos pesados pelo cosmos. (NASA, ESA, Hubble)</figcaption>
+</figure>
 
-<!-- ================= CIÊNCIA ================= -->
 <h2>🔬 Ciência &amp; Espaço</h2>
 
 <article>
-  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261108233100.htm" target="_blank" rel="noopener">Scientists finally discover why we learn to love bitter coffee</a></h3>
-  <p class="source">ScienceDaily</p>
-  <p>Nobody likes their first coffee, so why do so many of us end up loving it? A UC San Francisco team, publishing in <em>Nature</em>, found that in mice a slow dopamine signal builds in a brain region called the amygdala several minutes after the gut detects nutrients — and that signal teaches the brain to link a flavor with calories.</p>
-  <p>Blocking the signal stopped the learning; switching it on artificially made mice prefer a flavor with no calories at all. Brain scans of human volunteers point to the same region doing similar work.</p>
-  <p class="why">Why it's cool: your gut has been quietly training your taste buds — read this with your cup in hand.</p>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_vulcoes-ativos-marte-chance-vida_site.jpg" alt="">
+  <h3><a href="https://super.abril.com.br/ciencia/gas-fora-de-epoca-indica-que-os-vulcoes-de-marte-estao-so-adormecidos/" target="_blank" rel="noopener">Gás fora de época indica que os vulcões de Marte estão só adormecidos</a></h3>
+  <p class="src">Superinteressante</p>
+  <p>A sonda ExoMars Trace Gas Orbiter, da ESA, detectou picos de cloreto de hidrogênio logo acima de fissuras do vulcão gigante Alba Mons. Na Terra, esse gás escapa quando o magma sobe e se descomprime — então Marte talvez não seja um planeta tão "morto" quanto parece. Ainda não se viu lava nova, mas a pista se soma aos tremores marcianos já registrados.</p>
+  <p class="why">Regiões vulcânicas ativas podem ser os melhores lugares para procurar sinais de vida.</p>
 </article>
 
 <article>
-  <figure><img src="https://th-thumbnailer.cdn-si-edu.com/9eXmzs3clTsantJVOxNNKh66cdU=/420x240/filters:focal(977x862:978x863)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c2/73/c2736289-2eee-4a63-826e-65e6b7aa1102/voyager_spacecraft.jpg" alt="Illustration of the Voyager spacecraft in deep space" loading="lazy"></figure>
-  <h3><a href="https://www.smithsonianmag.com/smart-news/voyager-1-is-the-farthest-human-made-object-in-the-universe-and-the-spacecraft-is-about-to-reach-one-light-day-from-earth-180989845/" target="_blank" rel="noopener">Voyager 1 is about to reach one light-day from Earth</a></h3>
-  <p class="source">Smithsonian Magazine</p>
-  <p>Launched in 1977, Voyager 1 is the farthest object humans have ever made, and it's about to cross a poetic milestone: so far away that its radio signals, travelling at the speed of light, take a full day to reach us.</p>
-  <p>Nearly 50 years into the journey, the spacecraft and its twin are still sending data home from beyond the edge of the Sun's bubble, on a power supply that engineers keep stretching with clever tricks.</p>
-  <p class="why">Why it's cool: a message sent "good morning" arrives the next morning.</p>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-09T100323.980-1.jpg" alt="">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/11/chuva-de-meteoros-com-bolas-de-fogo-podera-ser-vista-no-brasil-hoje" target="_blank" rel="noopener">Chuva de meteoros com bolas de fogo poderá ser vista no Brasil hoje</a></h3>
+  <p class="src">Só Notícia Boa</p>
+  <p>As Táuridas do Norte chegam ao pico na madrugada de 11 para 12 de novembro e são famosas por produzir, de vez em quando, bolas de fogo bem brilhantes. Com lua nova, o céu fica mais escuro e a observação melhora. Não precisa de telescópio: basta um lugar longe das luzes da cidade e um pouco de paciência.</p>
+  <p class="why">Um programa perfeito para hoje à noite — sem tela nenhuma.</p>
 </article>
 
 <article>
-  <figure><img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_espelho-banheiro-desembaca_site.jpg" alt="Espelho de banheiro embaçado" loading="lazy"></figure>
-  <h3><a href="https://super.abril.com.br/mundo-estranho/por-que-o-espelho-do-banheiro-desembaca-de-baixo-para-cima/" target="_blank" rel="noopener">Por que o espelho do banheiro desembaça de baixo para cima?</a></h3>
-  <p class="source">Superinteressante</p>
-  <p>A resposta é contraintuitiva: o ar úmido é mais <em>leve</em> que o ar seco. Uma molécula de água pesa menos (18 g/mol) que a média do ar (cerca de 29 g/mol), então o vapor quente sobe e se acumula no alto do banheiro.</p>
-  <p>Quando o chuveiro desliga, o ar seco e mais denso entra por baixo, e as gotinhas da parte inferior do espelho evaporam primeiro.</p>
-  <p class="why">Por que é legal: física que você vai observar amanhã de manhã.</p>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/bennu-asteroid-analysi.jpg" alt="">
+  <h3><a href="https://phys.org/news/2026-11-bennu-asteroid-analysis-unexpected-space.html" target="_blank" rel="noopener">Bennu asteroid analysis suggests unexpected origins for organics in space</a></h3>
+  <p class="src">Phys.org</p>
+  <p>Amino-acid-like building blocks of proteins show up both in samples brought back from asteroid Bennu and in the famous Murchison meteorite that fell in Australia in 1969. The two rocks came from very different corners of the solar system, yet new research suggests their molecules were made by the same chemical process. That hints the recipe for life's ingredients may be common and robust out there.</p>
 </article>
 
-<!-- ================= NATUREZA ================= -->
 <h2>🌱 Natureza &amp; Animais</h2>
 
 <article>
-  <figure><img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Juan-Cortez-Estay-Unsplash.jpg" alt="Flores coloridas cobrindo o Deserto do Atacama" loading="lazy"></figure>
-  <h3><a href="https://www.goodnewsnetwork.org/worlds-driest-desert-erupts-into-record-breaking-bloom-boom-look/" target="_blank" rel="noopener">World's Driest Desert Erupts into Record-Breaking Bloom</a></h3>
-  <p class="source">Good News Network</p>
-  <p>Chile's Atacama, the driest non-polar place on Earth, is covered in flowers: about 200 species are blooming, some in spots that hadn't flowered since before 2000. Record rains soaked deep into the soil and woke up seeds that had waited decades.</p>
-  <p>Officials call it the widest, most vivid bloom in 30 years, and it's pulling in pollinators, reptiles, bats and guanacos. A local seed bank is collecting seeds while the show lasts — just two or three months.</p>
-  <p class="why">Why it's cool: patience, at a geological scale.</p>
+  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2024/12/19110004/bali-farm-768x512.jpg" alt="">
+  <h3><a href="https://news.mongabay.com/short-article/2026/11/a-plan-to-save-balis-vanishing-fireflies-takes-root-in-organic-farming/" target="_blank" rel="noopener">A plan to save Bali's vanishing fireflies takes root in organic farming</a></h3>
+  <p class="src">Mongabay</p>
+  <p>On a family farm in Bali, the project Bring Back the Light breeds fireflies and has already released nearly 20,000 of them. Its founder argues that releases alone aren't enough: the insects need pesticide-free fields and healthy wetlands to stay. So the work is as much about organic farming as it is about the fireflies themselves.</p>
+  <p class="why">Rice paddies glowing again at night — a lovely measure of a healthy landscape.</p>
 </article>
 
 <article>
-  <figure><img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/10054543/Aerides-crispa-768x512.jpg" alt="Flowering Aerides crispa orchid" loading="lazy"></figure>
-  <h3><a href="https://news.mongabay.com/short-article/2026/11/tens-of-thousands-of-orchids-saved-from-road-development-in-southern-india/" target="_blank" rel="noopener">Tens of thousands of orchids saved from road development in southern India</a></h3>
-  <p class="source">Mongabay</p>
-  <p>When trees in Kerala were marked for felling to widen a road, researchers didn't just let the orchids living on their branches go with them. They removed more than 27,000 of these epiphytic plants and replanted them elsewhere.</p>
-  <p>Two years later, about three-quarters of them are still alive — a striking success rate for such delicate plants.</p>
+  <h3><a href="https://www.goodnewsnetwork.org/worlds-driest-desert-erupts-into-record-breaking-bloom-boom-look/" target="_blank" rel="noopener">World's Driest Desert Erupts into Record-Breaking Bloom Boom</a></h3>
+  <p class="src">Good News Network</p>
+  <p>Chile's Atacama, the driest non-polar desert on Earth, is covered in flowers again, with around 200 species blooming at once. Some have popped up in spots where nobody had seen them since before the year 2000. Seeds can wait dormant in the sand for years until enough rain arrives.</p>
+  <p class="why">Patience, encoded in a seed.</p>
 </article>
 
 <article>
-  <h3><a href="https://www.goodnewsnetwork.org/fish-stocks-thrive-thanks-to-this-strange-seaweed-and-locals-who-protected-it/" target="_blank" rel="noopener">Fish Stocks Thrive Thanks to This Pink Seaweed and Locals Who Protected It</a></h3>
-  <p class="source">Good News Network</p>
-  <p>Maerl is a slow-growing pink seaweed that builds crunchy, coral-like beds on the seafloor, perfect nurseries for young fish. In parts of Scotland, local people pushed to ban scallop dredging, which had been tearing those beds apart.</p>
-  <p>Ten years later, the protected seabeds are recovering and fish are coming back with them.</p>
-  <p class="why">Why it's cool: leave the sea alone a little and it rebuilds itself.</p>
+  <img src="https://th-thumbnailer.cdn-si-edu.com/c6YuPd_wXo3iS5nTkDGAUYPrXYo=/420x240/filters:focal(732x495:733x496)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b6/37/b6373eab-19e9-437a-9b00-1cc901961726/octopus_vulgaris2.jpg" alt="">
+  <h3><a href="https://www.smithsonianmag.com/smart-news/octopuses-are-the-ultimate-escape-artists-now-scientists-know-how-the-creatures-contort-themselves-to-squeeze-through-tiny-holes-180989846/" target="_blank" rel="noopener">Octopuses Are the Ultimate Escape Artists. Now Scientists Know How They Squeeze Through Tiny Holes</a></h3>
+  <p class="src">Smithsonian Magazine</p>
+  <p>Everyone knows octopuses can slip through gaps far smaller than their bodies, but nobody had mapped exactly how. A new study breaks the trick down step by step, showing the sequence of moves they use to funnel themselves through a hole. Engineers are paying attention: the same strategy could inspire soft robots for search-and-rescue.</p>
 </article>
 
-<!-- ================= HISTÓRIAS HUMANAS ================= -->
 <h2>🧑‍🤝‍🧑 Histórias Humanas</h2>
 
 <article>
-  <figure><img src="https://jornal.usp.br/wp-content/uploads/2026/11/20261109_00_livro_nosso_joao_arqueologia_destaque-1024x538.jpg" alt="Capa do livro Nosso João, sobre o motorista João Bárbara Filho" loading="lazy"></figure>
-  <h3><a href="https://jornal.usp.br/universidade/livro-resgata-trajetoria-de-motorista-que-ajudou-a-revolucionar-a-arqueologia-brasileira/" target="_blank" rel="noopener">Livro resgata trajetória de motorista que ajudou a revolucionar a arqueologia brasileira</a></h3>
-  <p class="source">Jornal da USP</p>
-  <p>Por mais de cinco décadas, João Bárbara Filho, o Seu João, foi motorista da UFMG, e esteve nos bastidores de algumas das maiores descobertas da arqueologia brasileira, como a missão que revelou Luzia, o fóssil humano mais antigo das Américas, em Lagoa Santa.</p>
-  <p>Chamado pelos arqueólogos de "engenheiro de campo", ele inventava equipamentos e transformou sua casa em Mocambeiro em base para pesquisadores. Aos 92 anos, segue ativo e com memória afiada, e agora ganhou um livro: <em>Nosso João</em>, de Rodrigo Elias Oliveira (MAE-USP).</p>
-  <p class="why">Por que é legal: a ciência também é feita por quem dirige o carro até o sítio.</p>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-11-at-09.10.48.jpeg" alt="">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/11/professora-incentiva-menino-bale-arthur" target="_blank" rel="noopener">Professora incentiva menino de 9 anos a fazer salto no balé; ele consegue e os dois choram</a></h3>
+  <p class="src">Só Notícia Boa</p>
+  <p>Em Caruaru (PE), uma professora de dança ficou ao lado do pequeno Arthur, de 9 anos, até ele conseguir completar um salto difícil no balé — e os dois acabaram chorando de emoção. O vídeo passou de 1 milhão de visualizações. Arthur ainda treina outros três estilos de dança e já é campeão de tango.</p>
+  <p class="why">Às vezes tudo o que alguém precisa é de uma pessoa dizendo "você consegue".</p>
 </article>
 
 <article>
-  <figure><img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-10-at-09.49.30.jpeg" alt="Equipe médica do Einstein com o paciente" loading="lazy"></figure>
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/10/cirurgiao-brasileiro-jovem-dois-coracoes" target="_blank" rel="noopener">Cirurgião brasileiro faz jovem viver 35 dias com dois corações e salva a vida dele</a></h3>
-  <p class="source">Só Notícia Boa</p>
-  <p>No Einstein, em São Paulo, pelo SUS, o cirurgião Fábio Gaiotto implantou um coração de doador em Marcelo, de 20 anos, sem retirar o coração doente. Os dois órgãos funcionaram juntos por 35 dias, até a pressão pulmonar do rapaz baixar.</p>
-  <p>Só então a equipe retirou o coração original numa segunda cirurgia. Depois de cerca de quatro meses internado, Marcelo voltou para casa, a andar e a tocar piano.</p>
+  <h3><a href="https://reasonstobecheerful.world/what-were-reading-an-80-cent-plastic-bag-is-saving-mothers-lives/" target="_blank" rel="noopener">An 80-Cent Plastic Bag Is Saving Mothers' Lives</a></h3>
+  <p class="src">Reasons to be Cheerful</p>
+  <p>A simple plastic pouch called a calibrated drape sits under a mother during childbirth and lets health workers see exactly how much blood she's losing. That early warning has helped cut deaths from postpartum hemorrhage by about two-thirds in African maternity wards. The roundup also features googly-eyed buoys that scare seabirds away from fishing nets.</p>
+  <p class="why">Proof that some of the best innovations cost less than a coffee.</p>
 </article>
 
 <article>
-  <figure><img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/Homem-com-celular-diante-de-mural-colorido.png" alt="Raimundo diante de um mural colorido" loading="lazy"></figure>
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/09/ex-morador-de-rua-62-anos-unb" target="_blank" rel="noopener">Ex-morador de rua de 62 anos volta a estudar e presta Enem para cursar psicologia na UnB</a></h3>
-  <p class="source">Só Notícia Boa</p>
-  <p>Raimundo dos Santos Nascimento passou cerca de seis anos vivendo nas ruas do Plano Piloto, em Brasília. Com apoio do Centro POP e da Escola de Meninos e Meninas do Parque, terminou o ensino fundamental.</p>
-  <p>Agora estuda no cursinho popular gratuito Jovem de Expressão, em Ceilândia, e fez o Enem com um objetivo claro: psicologia na UnB.</p>
-  <p class="why">Por que é legal: nunca é tarde para recomeçar.</p>
+  <h3><a href="https://www.goodnewsnetwork.org/paralyzed-woman-promised-to-return-and-play-piano-for-rehab-patients-she-kept-her-word/" target="_blank" rel="noopener">Paralysis Could Not Stop Her: How This 84-Year-Old Made Good on Her Musical Promise</a></h3>
+  <p class="src">Good News Network</p>
+  <p>Bonnie Fay was paralyzed by Guillain-Barré syndrome and spent months recovering in a Pennsylvania care home. While there, she promised to come back one day and play piano for the patients. Now she has kept her word, returning to the same halls to give back the music that helped carry her through.</p>
 </article>
 
-<article>
-  <h3><a href="https://www.positive.news/society/actor-85-takes-to-the-stage-despite-alzheimers-diagnosis/" target="_blank" rel="noopener">Actor, 85, takes to the stage despite Alzheimer's diagnosis</a></h3>
-  <p class="source">Positive News</p>
-  <p>Peter Marinker has spent a lifetime on stage, and an Alzheimer's diagnosis at 85 hasn't stopped him. He's taken on a role in a Samuel Beckett play, keeping his craft going for as long as he can.</p>
-  <p>His story is a gentle reminder that a diagnosis doesn't have to end a creative life overnight.</p>
-</article>
-
-<!-- ================= TECNOLOGIA, HISTÓRIA & CURIOSIDADES ================= -->
 <h2>🛠️ Tecnologia, História &amp; Curiosidades</h2>
 
 <article>
-  <figure><img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_gatos-gostam-entrar-caixas_site.jpg" alt="Gato dentro de uma caixa de papelão" loading="lazy"></figure>
-  <h3><a href="https://super.abril.com.br/mundo-estranho/por-que-os-gatos-gostam-de-entrar-em-caixas/" target="_blank" rel="noopener">Por que os gatos gostam de entrar em caixas?</a></h3>
-  <p class="source">Superinteressante</p>
-  <p>Todo mundo que tem gato já viu: o presente fica de lado e a caixa vira o brinquedo. A explicação junta várias coisas — a memória de filhote num ninho fechado e seguro, o instinto de se esconder de predadores enquanto vigia presas.</p>
-  <p>E tem até medição: pesquisadores usam uma "pontuação de estresse felino", e gatos com acesso a caixas tendem a ficar mais calmos.</p>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/roman-era-frog-feast-n-1.jpg" alt="">
+  <h3><a href="https://phys.org/news/2026-11-roman-era-frog-feast-cambridge.html" target="_blank" rel="noopener">Roman-era 'frog feast' near Cambridge was the work of owls, bone analysis suggests</a></h3>
+  <p class="src">Phys.org</p>
+  <p>Archaeologists digging a ditch near Cambridge found more than 9,000 tiny bones, almost all of them frogs. Was it a Roman delicacy? A strange ritual? Careful analysis of the bones points to a humbler culprit: owls, which swallow prey whole and cough up the bones in pellets, night after night, for years.</p>
+  <p class="why">A great reminder that not every ancient mystery needs a human explanation.</p>
 </article>
 
 <article>
-  <figure><img src="https://img.atlasobscura.com/j26qiJn2rsgouh7V9AVoKd5PxnEmYMOQC7WdkflOaR8/rs:fill:300:200:1/g:ce/c:923:615:nowe:19:1/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMmVi/MDA5Ny03ZDljLTQw/MjMtYWYwOS04NDRi/MmIwMTExZmU4NDBl/N2YyZDVlMzg5ODVi/M2VfSU1HXzU2MjMu/anBlZw.jpg" alt="Tilted, wobbly-looking lampposts on the Halifax waterfront" loading="lazy"></figure>
-  <h3><a href="https://www.atlasobscura.com/places/drunken-lampposts-halifax" target="_blank" rel="noopener">Drunken Lampposts in Halifax, Nova Scotia</a></h3>
-  <p class="source">Atlas Obscura</p>
-  <p>On the Halifax waterfront, a group of lampposts lean and droop as if they'd had one too many at the pub. One of them is even "being sick" — spraying a stream of water into the harbour.</p>
-  <p class="why">Why it's cool: public art with a sense of humour.</p>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_nova-especie-ave-terrestre-CAPA_site.jpg" alt="">
+  <h3><a href="https://super.abril.com.br/ciencia/osso-esquecido-por-17-anos-revela-ave-pre-historica-gigante-na-caverna-dos-hobbits/" target="_blank" rel="noopener">Osso esquecido por 17 anos revela ave pré-histórica gigante na caverna dos "hobbits"</a></h3>
+  <p class="src">Superinteressante</p>
+  <p>Em 2009, arqueólogos acharam metade de um osso de perna na caverna de Liang Bua, na Indonésia — a mesma onde viveu o <em>Homo floresiensis</em>, o "hobbit". O fóssil, com 120 a 190 mil anos, ficou guardado na gaveta até que uma equipe internacional resolveu reexaminá-lo. Era de uma nova espécie de megapódio, uma ave terrestre de grande porte.</p>
+  <p class="why">Às vezes as maiores descobertas já estão no museu, só esperando um segundo olhar.</p>
 </article>
 
-<!-- ================= ARTE & DESIGN ================= -->
 <h2>🎨 Arte &amp; Design</h2>
 
 <article>
-  <figure><img src="https://th-thumbnailer.cdn-si-edu.com/ipk9klVoOYAFt-q3Pc40sPfr_9I=/420x240/filters:focal(2000x819:2001x820)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8b/99/8b99bff6-55f0-4b63-a550-48a6b71ccfb0/near_abiquiu_new_mexico_i_by_georgia_okeeffe.jpg" alt="Georgia O'Keeffe painting of New Mexico hills near Abiquiu" loading="lazy"></figure>
-  <h3><a href="https://www.smithsonianmag.com/smart-news/while-cleaning-out-her-aunts-manhattan-apartment-a-woman-found-a-long-lost-georgia-okeeffe-painting-buried-beneath-fur-coats-in-the-closet-180989848/" target="_blank" rel="noopener">A long-lost Georgia O'Keeffe painting turns up in a Manhattan closet</a></h3>
-  <p class="source">Smithsonian Magazine</p>
-  <p>Clearing out her late aunt's apartment, a woman found a painting tucked under old fur coats. It turned out to be a 1930 O'Keeffe landscape of New Mexico that experts knew only from an old photograph.</p>
-  <p>The rediscovered canvas is headed to auction, where it could fetch more than $3 million.</p>
-  <p class="why">Why it's cool: check your aunt's closet.</p>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/cupoty2026-5.jpg" alt="">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/close-up-photographer-of-the-year-2026-shortlist/" target="_blank" rel="noopener">Bats, Spiders, and Slime Molds Make the Close-Up Photographer of the Year Shortlist</a></h3>
+  <p class="src">Colossal</p>
+  <p>This year's Close-Up Photographer of the Year drew a record number of entries, and the shortlist is a feast of tiny worlds: insects, spiders, bats and glowing slime molds in astonishing detail. Winners will be announced in January. Meanwhile, there's an open "Close to Home" challenge for photos taken near where you live.</p>
 </article>
 
 <article>
-  <figure><img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/mary-5.jpg" alt="Painting by Kelly Sinnapah Mary of a figure merged with lush foliage" loading="lazy"></figure>
-  <h3><a href="https://www.thisiscolossal.com/2026/11/kelly-sinnapah-mary-foliage-portraits/" target="_blank" rel="noopener">Caribbean Surrealism and Ancestral Memory Merge in Kelly Sinnapah Mary's Lush Portraits</a></h3>
-  <p class="source">Colossal</p>
-  <p>Guadeloupe-born artist Kelly Sinnapah Mary paints figures that dissolve into leaves, flowers and vines, as if people and landscape were one body. Her work draws on family history, Caribbean folklore and a recurring character she calls Sanbras.</p>
-  <p>The result is dreamy, green and quietly strange — the kind of painting you keep looking at.</p>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/genser-3.jpg" alt="">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/amy-genser-paper-wall-sculptures/" target="_blank" rel="noopener">Amy Genser's Elaborate Mulberry Paper Assemblages Undulate Like the Sea</a></h3>
+  <p class="src">Colossal</p>
+  <p>Amy Genser rolls, layers and paints mulberry paper into wall reliefs that look like coral reefs, ocean swells and seafloor maps seen from above. Thousands of little coils create texture that shifts as you walk past. Her newest monumental piece, "Stars Below," traces a transatlantic sea voyage.</p>
 </article>
 
-<!-- ================= NESTE DIA ================= -->
+<article>
+  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/11141421/flamingobean_zuckerman-1-768x512.png" alt="">
+  <h3><a href="https://news.mongabay.com/short-article/2026/11/what-do-a-bean-and-a-flamingo-have-in-common-finding-the-unexpected-in-nature-photos/" target="_blank" rel="noopener">What do a bean and a flamingo have in common? Finding the unexpected in nature photos</a></h3>
+  <p class="src">Mongabay</p>
+  <p>Photographer Andrew Zuckerman went through his archive and paired images that rhyme visually — a sprouting bean beside a curving flamingo, for instance. Shot with focus stacking against clean backgrounds, the pairs reveal shared shapes across very different living things. The result is his book <em>United Nature</em>.</p>
+  <p class="why">A gentle exercise in seeing connections everywhere.</p>
+</article>
+
 <h2>📜 Neste dia</h2>
-<div class="block">
-  <h3><a href="https://pt.wikipedia.org/wiki/O_Cruzeiro_(revista)" target="_blank" rel="noopener">10 de novembro de 1928: nasce a revista O Cruzeiro</a></h3>
-  <p class="source">Wikipédia</p>
-  <p>Chegava às bancas do Rio de Janeiro a primeira edição de <em>O Cruzeiro</em>, a revista ilustrada que se tornaria a maior do país e apresentou o fotojornalismo moderno a gerações de brasileiros. E no mesmo dia, em 1969, estreava nos EUA a <em>Sesame Street</em> — a nossa Vila Sésamo.</p>
+<div class="box">
+  <p><strong>11 de novembro de 1821</strong> — Nascia em Moscou <a href="https://pt.wikipedia.org/wiki/Fi%C3%B3dor_Dostoi%C3%A9vski" target="_blank" rel="noopener">Fiódor Dostoiévski</a>, autor de <em>Crime e Castigo</em> e <em>Os Irmãos Karamázov</em>. Há exatos 205 anos chegava ao mundo um dos escritores que mais fundo mergulharam na alma humana — e que, até hoje, rende ótimas conversas de café.</p>
 </div>
 
-<!-- ================= LEITURA LONGA ================= -->
 <h2>📖 Leitura longa</h2>
-<div class="block">
-  <figure><img src="https://images.aeonmedia.co/images/1f0bf1c6-e0ad-490d-b4c1-685617a95d62/essay-from-kodo-dsc02003.jpg?width=1200&amp;quality=75&amp;format=auto" alt="Illustrative photo for the essay The wholehearted life" loading="lazy"></figure>
-  <h3><a href="https://aeon.co/essays/how-does-roshi-joan-halifax-make-sense-of-her-buddhist-life" target="_blank" rel="noopener">The wholehearted life</a></h3>
-  <p class="source">Aeon · Ben Daitz · ~5,400 words</p>
-  <p>A portrait of Roshi Joan Halifax — Zen teacher, medical anthropologist and long-time companion to the dying — by a writer who has known her for years. It follows her from a sickly childhood through fieldwork, a turbulent spell in psychedelic research and a personal collapse, to Buddhist practice and caring for people at the end of life.</p>
-  <p>Along the way it asks how to be compassionate without burning out, an idea she calls "pathological altruism". Slow, thoughtful, a good one for the weekend.</p>
-</div>
+<article>
+  <img src="https://www.quantamagazine.org/wp-content/uploads/2026/11/Lipid-First-cr.Mark-Belan-Default.webp" alt="">
+  <h3><a href="https://www.quantamagazine.org/the-case-for-a-bubble-at-lifes-start-20261110/" target="_blank" rel="noopener">The Case for a Bubble at Life's Start</a></h3>
+  <p class="src">Quanta Magazine</p>
+  <p>How did life begin? One camp says self-copying RNA came first; another says the first step was simply a container — a tiny fatty bubble that kept chemistry concentrated long enough for interesting things to happen. This piece, part of Quanta's series on life's origins, walks through the "lipid-first" idea, the experiments behind it and why membranes may deserve more credit.</p>
+  <p class="why">A calm, deep read about the oldest question there is.</p>
+</article>
 
 <footer>
-  <p>Pronto, é isso por hoje ☕</p>
-  <a href="editions/2026-11-09.html">← Edição anterior (9 de novembro)</a>
+  Pronto, é isso por hoje ☕
+  <a href="editions/2026-11-10.html">← Edição anterior (10 de novembro)</a>
 </footer>
 
 </main>
