@@ -3,79 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Good Feed — 12 de novembro de 2026</title>
+<title>Good Feed — 13 de novembro de 2026</title>
 <style>
   :root {
     --bg: #faf6ef;
-    --fg: #2b2620;
+    --card: #fffdf8;
+    --text: #2b2620;
     --muted: #7a6f62;
     --accent: #a0522d;
-    --card: #fffdf8;
-    --rule: #e7dfd2;
+    --rule: #e8dfd1;
+    --why: #f3ebdd;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #1c1a17;
-      --fg: #e9e2d6;
-      --muted: #a69b8c;
+      --bg: #1c1915;
+      --card: #24201b;
+      --text: #ece4d8;
+      --muted: #a89c8c;
       --accent: #e0a070;
-      --card: #24211d;
-      --rule: #3a352f;
+      --rule: #3a332b;
+      --why: #2e2821;
     }
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
-    color: var(--fg);
+    color: var(--text);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.65;
   }
-  main { max-width: 680px; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
-  header { text-align: center; margin-bottom: 2.5rem; }
-  header h1 { font-size: 2.6rem; margin: 0; letter-spacing: 0.01em; }
-  header .date { color: var(--muted); font-style: italic; margin: 0.3rem 0 1rem; }
-  header .greet { font-size: 1.05rem; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
+  header { text-align: center; margin-bottom: 48px; }
+  header h1 { font-size: 2.6em; margin: 0; letter-spacing: -0.01em; font-weight: normal; }
+  header .date { color: var(--muted); font-style: italic; margin: 6px 0 18px; }
+  header .hello { margin: 0 auto; max-width: 30em; }
   h2 {
-    font-size: 1.35rem;
-    margin: 3rem 0 1.2rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid var(--rule);
+    font-size: 1.25em; font-weight: normal; margin: 56px 0 18px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--rule);
   }
-  article { margin: 0 0 2.2rem; }
+  article { margin: 0 0 40px; }
   article img, figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    display: block;
-    margin-bottom: 0.8rem;
-    background: var(--rule);
+    width: 100%; height: auto; border-radius: 6px; display: block;
+    margin-bottom: 14px; background: var(--rule);
   }
-  article h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 0.2rem; }
+  article h3 { font-size: 1.15em; line-height: 1.35; margin: 0 0 4px; font-weight: bold; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h3 a { color: var(--fg); }
-  h3 a:hover { color: var(--accent); }
-  .src { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.6rem; }
-  article p { margin: 0 0 0.6rem; }
-  .why { font-style: italic; color: var(--muted); font-size: 0.95rem; }
-  .why::before { content: "✦ "; color: var(--accent); font-style: normal; }
+  article h3 a { color: var(--text); }
+  article h3 a:hover { color: var(--accent); }
+  .source { color: var(--muted); font-size: 0.82em; margin: 0 0 10px; font-style: italic; }
+  article p { margin: 0 0 10px; }
+  .why {
+    background: var(--why); border-radius: 6px; padding: 8px 12px;
+    font-size: 0.9em;
+  }
   figure { margin: 0; }
-  figcaption { color: var(--muted); font-size: 0.95rem; font-style: italic; }
-  .box { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 1.2rem 1.3rem; }
+  figcaption { color: var(--muted); font-size: 0.9em; font-style: italic; }
   footer {
-    text-align: center;
-    margin-top: 3.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 1.05rem;
+    margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--rule);
+    text-align: center; color: var(--muted);
   }
   @media (max-width: 480px) {
-    body { font-size: 17px; }
-    header h1 { font-size: 2.1rem; }
-    main { padding-top: 1.8rem; }
+    body { font-size: 17.5px; }
+    main { padding: 32px 16px 48px; }
+    header h1 { font-size: 2.1em; }
   }
 </style>
 </head>
@@ -84,163 +78,151 @@
 
 <header>
   <h1>Good Feed</h1>
-  <p class="date">quinta-feira, 12 de novembro de 2026</p>
-  <p class="greet">Bom dia, Diego! Hoje tem formiga que não envelhece, chorume virando adubo e uma chuva de estrelas de 1833. Pega o café. ☕</p>
+  <p class="date">Sexta-feira, 13 de novembro de 2026</p>
+  <p class="hello">Bom dia, Diego! Sexta-feira 13 por aqui só traz sorte: estrelas verdes, gatos tagarelas e onças que gostam de companhia. Pega o café e vem.</p>
 </header>
 
 <h2>🌌 Foto do dia</h2>
-<figure class="box">
-  <a href="https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/" target="_blank" rel="noopener"><img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/conjunction-bubak.jpg?w=1638&amp;h=2048&amp;fit=clip&amp;crop=faces%2Cfocalpoint" alt="Lua crescente, Vênus e a estrela Spica sobre os montes Tatra" loading="lazy"></a>
-  <figcaption><strong>Lua, Vênus e Spica se encontram</strong> — uma Lua crescente fininha e o brilho de Vênus sobre os montes Tatra, na Polônia, com a estrela Spica (que acabou de se revelar um sistema triplo) logo ao lado. Foto: Włodzimierz Bubak / APOD.</figcaption>
+<figure>
+  <a href="https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/" target="_blank" rel="noopener"><img src="https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Andromeda_closeupCruz4096.jpg" alt="NGC 206, aglomerado de estrelas azuis na galáxia de Andrômeda"></a>
+  <figcaption>NGC 206: um berçário de estrelas jovens e azuis, com 4.000 anos-luz de largura, nos braços empoeirados de Andrômeda — a 2,5 milhões de anos-luz daqui. (Foto: David Cruz / APOD)</figcaption>
 </figure>
 
 <h2>🔬 Ciência &amp; Espaço</h2>
 
 <article>
-  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/chorume-alface-experimento-unicamp.jpg" alt="" loading="lazy">
-  <h3><a href="https://super.abril.com.br/ciencia/pesquisa-brasileira-transforma-chorume-em-fertilizante-seguro-para-a-agricultura/" target="_blank" rel="noopener">Pesquisa brasileira transforma chorume em fertilizante seguro para a agricultura</a></h3>
-  <p class="src">Superinteressante · Agência FAPESP</p>
-  <p>O Brasil importa quase todo o potássio que usa nas lavouras. Pesquisadores da Unicamp descobriram como precipitar quimicamente, a partir do chorume de aterros sanitários, a carnalita — um mineral rico em potássio e magnésio que normalmente só se obtém com mineração profunda. Junto com a estruvita, já conhecida, o processo entrega nitrogênio, fósforo, potássio e magnésio às plantas, e os testes foram feitos com alface.</p>
-  <p class="why">O líquido mais nojento do lixão virando comida para a horta.</p>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_unica-estrela-verde-desafia_site.jpg" alt="Ilustração de uma estrela esverdeada">
+  <h3><a href="https://super.abril.com.br/ciencia/unica-estrela-verde-ja-descoberta-desafia-o-que-sabiamos-sobre-a-cor-destes-astros/" target="_blank" rel="noopener">Única estrela verde já descoberta desafia o que sabíamos sobre a cor dos astros</a></h3>
+  <p class="source">Superinteressante (via The Conversation)</p>
+  <p>Aprendemos que estrelas são vermelhas, brancas ou azuladas — e nunca verdes. Mas um estudo da Universidade de Warwick analisou a WDJ1330+6435, uma anã branca a cerca de 280 anos-luz, e concluiu que, vista de perto, ela teria um tom verde-claro. O mesmo trabalho mostra que algumas anãs brancas brilhariam em rosa, ciano, amarelo e roxo.</p>
+  <p class="why">✨ O artigo científico se chama “Any colour you like”, em homenagem à faixa do Pink Floyd.</p>
 </article>
 
 <article>
-  <img src="https://www.sciencedaily.com/images/1920/pebble-rain.webp" alt="" loading="lazy">
-  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261110042549.htm" target="_blank" rel="noopener">Earth's fiery birth may have created hundreds of oceans' worth of water</a></h3>
-  <p class="src">ScienceDaily · University of New Mexico</p>
-  <p>A team at the University of New Mexico heated silicate rock to 1,200–1,400 °C in flowing hydrogen to mimic pebbles falling through the young Earth's atmosphere. In minutes, most of the iron oxide turned into metallic iron and released water vapor — something that didn't happen at all in helium. Scaled up, the reaction could have made hundreds of oceans' worth of water.</p>
-  <p class="why">Maybe our water wasn't delivered by comets after all — maybe planets simply brew it.</p>
+  <img src="https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ab/21/ab21fe86-4d88-46f9-bcc2-d385adaa2ceb/noirlab2626c.jpg" alt="Ilustração de um objeto distante no Sistema Solar">
+  <h3><a href="https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/" target="_blank" rel="noopener">A Mysterious Object Far Beyond Pluto Could Be a New Dwarf Planet</a></h3>
+  <p class="source">Smithsonian Magazine</p>
+  <p>Astronomers have spotted ED138, a distant body orbiting well beyond Pluto that takes roughly 280 years to circle the Sun once. It is a candidate dwarf planet, but its size still needs to be pinned down before it can earn the title. A quiet reminder that our own solar system still has unexplored corners.</p>
 </article>
 
 <article>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/uh-biologists-reveal-h.jpg" alt="" loading="lazy">
-  <h3><a href="https://phys.org/news/2026-11-ant-colonies-defy-aging-patterns.html" target="_blank" rel="noopener">Ant colonies defy aging patterns as death risk falls and reproduction rises</a></h3>
-  <p class="src">Phys.org · University of Houston</p>
-  <p>Biologists Blaine Cole and Diane Wiernasz followed 3,285 western harvester ant colonies in Colorado for 34 years. The older a colony got, the <em>less</em> likely it was to die and the more likely it was to reproduce — so-called negative senescence. The trick: workers live about a year and are constantly replaced, so the colony's "body" stays young while the colony itself ages.</p>
-  <p class="why">A superorganism that gets better with age, like a good cast-iron pan.</p>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/so-noticia-boa-site-800x560-51.png" alt="Planetas alinhados no céu antes do amanhecer">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/13/alinhamento-quatro-planetas-novembro-2026" target="_blank" rel="noopener">Quatro planetas se alinham no céu a partir de hoje; veja como observar a olho nu</a></h3>
+  <p class="source">Só Notícia Boa</p>
+  <p>De hoje até 22 de novembro, Mercúrio, Vênus, Marte e Júpiter aparecem juntos numa mesma faixa do céu, antes do amanhecer, olhando para o leste. Vênus e Júpiter são os mais brilhantes, Marte se denuncia pelo tom avermelhado e Mercúrio, mais baixinho, fica mais fácil entre os dias 20 e 22. Basta um horizonte livre — binóculo ajuda, mas não é obrigatório.</p>
+  <p class="why">☕ Programa perfeito para um café bem cedinho no fim de semana.</p>
 </article>
 
 <h2>🌱 Natureza &amp; Animais</h2>
 
 <article>
-  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/11172447/bugio-ruivo4-768x512.jpg" alt="" loading="lazy">
-  <h3><a href="https://news.mongabay.com/short-article/2026/11/genetic-study-describes-two-new-species-of-amazonian-howler-monkeys/" target="_blank" rel="noopener">Genetic study describes two new species of Amazonian howler monkeys</a></h3>
-  <p class="src">Mongabay</p>
-  <p>Combining genomes, body traits and old museum specimens, a team led by Romina Batista (Salford and Brazil's INPA) split the red howler into new species: the Pantepui red howler (<em>Alouatta iroi</em>) in the northwestern Amazon and the Mato Grosso red howler (<em>A. matogrossensis</em>) in the southern Brazilian Amazon. Trinidad's howlers may be a third. Naming them is the first step to protecting them — the Mato Grosso one may already qualify as critically endangered.</p>
-  <p class="why">Our bugios-ruivos just turned out to be more than one kind.</p>
+  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/12190521/Unrelated-males-grooming-2-768x512.jpg" alt="Duas onças-pintadas machos se lambendo no Pantanal">
+  <h3><a href="https://news.mongabay.com/short-article/2026/11/in-brazils-prey-rich-pantanal-jaguars-reveal-a-surprisingly-social-side/" target="_blank" rel="noopener">In Brazil’s prey-rich Pantanal, jaguars reveal a surprisingly social side</a></h3>
+  <p class="source">Mongabay</p>
+  <p>Jaguars are supposed to be loners, but 13 years of photos and videos from the Pantanal — home to the densest jaguar population on Earth — tell a different story. Of 167 recorded encounters between identified cats (459 individuals in total), nearly 39% were friendly: grooming, playing, even hunting together. Related males got along especially well.</p>
+  <p class="why">🐆 Com comida farta, até o maior felino das Américas aprende a dividir o espaço.</p>
 </article>
 
 <article>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" alt="" loading="lazy">
-  <h3><a href="https://www.goodnewsnetwork.org/spain-sees-incredible-doubling-of-her-brown-bear-population-and-its-breeding-range/" target="_blank" rel="noopener">Brown Bear Population in Spain Doubles With Incredible Increase of its Breeding Range</a></h3>
-  <p class="src">Good News Network</p>
-  <p>Cantabrian brown bears, once down to as few as 140 animals, now number about 370 and roam some 17,000 km² of northern Spain. Protections, new reserves and quieter countryside let their breeding range keep expanding — by 77% in just the last decade studied. Researchers say management plans are now underestimating how far the bears can go.</p>
-  <p class="why">A comeback that's outpacing the people planning for it.</p>
+  <img src="https://jornal.usp.br/wp-content/uploads/2026/11/20261111_gatomiando-1024x576.jpg" alt="Gato miando">
+  <h3><a href="https://jornal.usp.br/ciencias/gatos-miam-mais-para-plateia-humana-que-para-outros-gatos-e-nos-usam-para-resolver-seus-problemas/" target="_blank" rel="noopener">Gatos miam mais para plateia humana que para outros gatos – e nos usam para resolver seus problemas</a></h3>
+  <p class="source">Jornal da USP</p>
+  <p>Pesquisadoras do Instituto de Psicologia da USP colocaram a comida favorita de 38 gatos numa caixa fechada, dentro de casa, com e sem o tutor por perto. Com o humano presente, os gatos miavam muito mais e alternavam o olhar entre a pessoa e a caixa; sozinhos, quase se calavam. Conclusão: o miado é um recurso intencional, direcionado a nós — ainda que isso não signifique que eles estejam “falando”.</p>
+  <p class="why">🐈‍⬛ Sexta-feira 13 é dia de valorizar gato preto — e todos os outros.</p>
 </article>
 
 <article>
-  <img src="https://revistapesquisa.fapesp.br/wp-content/uploads/2026/11/RPF-expedicao-araca-2026-10-1140.webp" alt="" loading="lazy">
-  <h3><a href="https://revistapesquisa.fapesp.br/expedicao-cientifica-revela-a-biodiversidade-no-topo-da-amazonia/" target="_blank" rel="noopener">Expedição científica revela a biodiversidade no topo da Amazônia</a></h3>
-  <p class="src">Revista Pesquisa FAPESP</p>
-  <p>Dezesseis pesquisadores passaram 19 dias acampados a até 1.260 metros de altitude na serra do Aracá, um tepui no norte do Amazonas. Voltaram com cinco possíveis lagartos novos, uma cobra inédita, cerca de dez prováveis anfíbios desconhecidos e entre 7 mil e 11 mil insetos. As amostras ainda vão render anos de estudos — de genética a micróbios do solo.</p>
-  <p class="why">Ainda existem "mundos perdidos" no Brasil, e tem gente subindo lá para conhecer.</p>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_veterinario-salvou-animal-mais-velho-mundo-CAPA_site.jpg" alt="A tartaruga Jonathan">
+  <h3><a href="https://super.abril.com.br/sociedade/como-um-veterinario-salvou-o-animal-mais-velho-do-mundo-de-194-anos-cego-e-morrendo-de-fome/" target="_blank" rel="noopener">Como um veterinário salvou o animal mais velho do mundo, de 194 anos</a></h3>
+  <p class="source">Superinteressante</p>
+  <p>Jonathan, uma tartaruga-gigante de Seychelles que vive na ilha de Santa Helena, tem 194 anos e é o animal terrestre mais velho do mundo. Em 2009, cego por catarata e com o bico amolecido, ele não conseguia mais comer. O veterinário Joe Hollins passou a alimentá-lo à mão com frutas, verduras e feno — e, dois anos depois, o bico tinha se regenerado.</p>
+</article>
+
+<article>
+  <img src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/a-global-rebound-for-mangroves/burmamangroves_oli2_20260202.jpg" alt="Imagem de satélite de manguezais em Myanmar">
+  <h3><a href="https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/" target="_blank" rel="noopener">A Global Rebound for Mangroves</a></h3>
+  <p class="source">NASA Earth Observatory</p>
+  <p>After losing about 3,000 km² between 1984 and 2010, the world’s mangroves have since regained nearly 2,000 km², according to a new study in <em>Science</em> built on four decades of Landsat images. Most of the growth came from mangroves colonizing fresh mudflats; the rest from restoration and regrowth, with Asia, Australia and South America leading the way.</p>
+  <p class="why">🌿 Manguezais protegem costas, abrigam peixes e guardam muito carbono — boa notícia de verdade.</p>
 </article>
 
 <h2>🧑‍🤝‍🧑 Histórias Humanas</h2>
 
 <article>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/so-noticia-boa-site-800x560-49.png" alt="" loading="lazy">
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/12/jovem-escola-publica-pesquisar-harvard" target="_blank" rel="noopener">Jovem de escola pública supera 200 candidatos e conquista vaga para pesquisar em Harvard aos 20 anos</a></h3>
-  <p class="src">Só Notícia Boa</p>
-  <p>José Alves da Silveira Neto, de Quixeramobim (CE), estudou a vida toda em escola pública e hoje está no sexto semestre de Medicina na Uece. Tudo começou com uma medalha de bronze na OBMEP, que lhe rendeu uma bolsa de iniciação científica. Em junho de 2027 ele vai a Boston pesquisar medicina regenerativa num centro ligado à Harvard Medical School — um dos dois brasileiros escolhidos.</p>
-  <p class="why">Uma medalhinha de olimpíada de matemática que abriu um caminho inteiro.</p>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/so-noticia-boa-site-800x560-50.png" alt="Cerimônia na UFBA">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/12/harvard-devolve-cranio-bahia" target="_blank" rel="noopener">Após 185 anos, Harvard devolve à Bahia crânio de africano escravizado</a></h3>
+  <p class="source">Só Notícia Boa</p>
+  <p>Levado do Brasil no século 19 e guardado por décadas em coleções nos EUA, o crânio de um homem africano escravizado voltou a Salvador e foi recebido pela UFBA numa cerimônia nesta quarta. A devolução atendeu a pedidos da comunidade islâmica baiana; há a hipótese, ainda não comprovada, de que ele tenha participado da Revolta dos Malês, de 1835. Agora, pesquisadores e comunidades vão decidir juntos o destino final, que pode incluir um sepultamento segundo as tradições religiosas.</p>
+  <p class="why">🕊️ Um gesto de respeito e memória que atravessou quase dois séculos.</p>
 </article>
 
 <article>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-11T111611.134.jpg" alt="" loading="lazy">
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/11/jovens-amigos-correspondencia-reencontro-casamento-24-anos" target="_blank" rel="noopener">Jovens que foram amigos por correspondência se reencontram após 24 anos e se casam</a></h3>
-  <p class="src">Só Notícia Boa</p>
-  <p>David e Jodie se conheceram nas férias na ilha grega de Kos, em 1994, e viraram amigos por carta até perderem contato. Em 2016, uma mensagem de aniversário dela chegou ao celular da mãe dele, e o fio foi reatado. Vieram a viagem de seis horas de Newcastle a Cardiff, o pedido na London Eye e o casamento em 2023 — e todo agosto eles voltam a Kos.</p>
-  <p class="why">Cartas de papel têm um prazo de validade bem mais longo do que parece.</p>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-13-at-10.13.57.jpeg" alt="Resgate da cadela Sky no Dique do Tororó">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/13/resgate-dique-tororo-cadela" target="_blank" rel="noopener">O herói que pulou no Dique do Tororó para salvar cadela que nadava havia 2 horas</a></h3>
+  <p class="source">Só Notícia Boa</p>
+  <p>Em Salvador, Henrique Pereira tirou a roupa e nadou até a cadela Sky, exausta depois de cerca de duas horas na água do Dique do Tororó. Ela até tentou mordê-lo no susto, mas ele a levou até a margem, onde outras pessoas ajudaram. O melhor vem depois: uma menina de quatro anos reconheceu Sky numa reportagem de TV, e a cadela voltou para casa.</p>
 </article>
 
 <article>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/fw-gretchen.png" alt="" loading="lazy">
-  <h3><a href="https://www.goodnewsnetwork.org/100-year-old-store-mom-first-birthday-party/" target="_blank" rel="noopener">100-Year-Old 'Store Mom' Surprised With Her First Birthday Party</a></h3>
-  <p class="src">Good News Network</p>
-  <p>After a stroke, Gretchen Sollo started walking laps inside a Lowe's hardware store in Bradley, Illinois — about 1,500 miles over five years. The staff adopted her as their "store mom," and when she turned 100 they lined an aisle with a blue carpet, balloons, cake and a personalized vest. It was the first birthday party of her life.</p>
-  <p class="why">Community can grow in the most unlikely aisle.</p>
+  <h3><a href="https://www.goodnewsnetwork.org/infant-goes-from-110-seizures-a-day-to-seizure-free-after-rare-treatment/" target="_blank" rel="noopener">Infant Goes from 110 Seizures a Day to Seizure-Free with Experimental Treatment</a></h3>
+  <p class="source">Good News Network</p>
+  <p>Baby Adnan had a seizure roughly every 13 minutes from birth, caused by a rare genetic variant in an ion channel. Genome sequencing pointed doctors in Dubai to ABS-1230, an experimental drug aimed at exactly that faulty channel, given under compassionate use. After one dose he stopped seizing, went home a week later and has started hitting early milestones — though doctors stress more research is needed.</p>
+  <p class="why">🧬 Medicina de precisão no seu melhor: ler o gene e acertar o alvo.</p>
 </article>
 
 <h2>🛠️ Tecnologia, História &amp; Curiosidades</h2>
 
 <article>
-  <img src="https://jornal.usp.br/wp-content/uploads/2026/11/20261111_cinema-1024x538.jpg" alt="" loading="lazy">
-  <h3><a href="https://jornal.usp.br/cultura/em-1886-alunos-de-direito-recepcionaram-sarah-bernhardt-em-sao-paulo/" target="_blank" rel="noopener">Em 1886, alunos de Direito recepcionaram Sarah Bernhardt em São Paulo</a></h3>
-  <p class="src">Jornal da USP</p>
-  <p>Quando a maior atriz do mundo veio a uma São Paulo de uns 60 mil habitantes para encenar <em>A Dama das Camélias</em> e <em>Fedra</em>, quem a ciceroneou foram estudantes abolicionistas do Largo São Francisco. Esse encontro curioso virou a peça <em>Sarah Bernhardt em São Paulo</em>, de Samir Yazbek, com direção de Ulysses Cruz, em cartaz no Sesc Santana até 22 de novembro.</p>
-  <p class="why">Um pedacinho esquecido da história paulistana — e um programa para o fim de semana.</p>
+  <img src="https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f3/36/f3363810-d769-42fa-ae92-6da75b1a704f/lock.jpg" alt="Cadeado de latão com segredo de letras">
+  <h3><a href="https://www.smithsonianmag.com/smart-news/this-mysterious-combination-lock-sank-in-a-1583-shipwreck-when-engineers-cracked-the-code-it-clicked-open-for-the-first-time-in-more-than-400-years-180989864/" target="_blank" rel="noopener">A Combination Lock From a 1583 Shipwreck Clicks Open After 400 Years</a></h3>
+  <p class="source">Smithsonian Magazine</p>
+  <p>A brass combination lock recovered from the <em>Ann Francis</em>, which sank off southern Wales in 1583, kept its secret for more than four centuries. Engineers used micro-CT scans to see the mechanism inside and work out its four-letter code without forcing it. With the right letters lined up, the lock opened for the first time since the Elizabethan era.</p>
+  <p class="why">🔐 Sim, já existia cadeado de segredo no século 16.</p>
 </article>
 
 <article>
-  <img src="https://th-thumbnailer.cdn-si-edu.com/TZVmLqtDHgn42yJmxHCFFcl0bh4=/420x240/filters:focal(512x341:513x342)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3f/c3/3fc39d02-0430-4872-aff2-6a7c29ac693d/image_1.png" alt="" loading="lazy">
-  <h3><a href="https://www.smithsonianmag.com/smart-news/dismantled-to-survive-the-nazi-blitz-coventry-cathedrals-stained-glass-is-a-medieval-jigsaw-puzzle-its-12000-fragments-have-been-digitized-for-the-public-180989853/" target="_blank" rel="noopener">Coventry Cathedral's Stained Glass Is 'a Medieval Jigsaw Puzzle' — Its 12,000 Fragments Have Been Digitized</a></h3>
-  <p class="src">Smithsonian Magazine</p>
-  <p>Coventry's 15th-century windows have had a rough life: broken during the Reformation, then taken down and stored for safekeeping in the 1940s. What survives is a puzzle of roughly 12,000 pieces, and now every fragment is online for anyone to browse. Among the saints and Bible scenes are funny little animals and portraits of the medieval donors who paid for the glass.</p>
-  <p class="why">A 600-year-old jigsaw you can now explore from the sofa.</p>
-</article>
-
-<article>
-  <img src="https://www.sciencedaily.com/images/1920/1834-william-iv-sixpence.webp" alt="" loading="lazy">
-  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261109205359.htm" target="_blank" rel="noopener">Scientists uncover a 192-year-old mystery hidden in a mangled silver coin</a></h3>
-  <p class="src">ScienceDaily</p>
-  <p>A badly crushed 1834 sixpence turned up in an album bought whole at a car boot sale near Manchester. Microscopy, chemical tests and 3D surface mapping showed the dent in the king's portrait came from repeated, concentrated pressure — most likely a mistake at the mint itself, not wear or a later knock. Labs at Brunel and Oxford helped confirm the measurements.</p>
-  <p class="why">Forensic science applied to a single flea-market coin.</p>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/hungary-rubik-cube-fac.jpg" alt="Fábrica de cubos mágicos na Hungria">
+  <h3><a href="https://phys.org/news/2026-11-iconic-puzzle-home-production-rubik.html" target="_blank" rel="noopener">An iconic puzzle comes home as production of the Rubik’s Cube returns to Hungary</a></h3>
+  <p class="source">Phys.org</p>
+  <p>A fully automated line in Jászberény will now make about a million Rubik’s Cubes a year, bringing production back to the country where it all began. Ernő Rubik, now 82, built his first wooden prototype of 27 blocks in 1974 while teaching architecture in Budapest. “The cube was born here,” he said — and more than half a billion have been sold since.</p>
 </article>
 
 <h2>🎨 Arte &amp; Design</h2>
 
 <article>
-  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/photomicography-2026-2.jpg" alt="" loading="lazy">
-  <h3><a href="https://www.thisiscolossal.com/2026/11/nikon-small-world-photomicrography-competition-2026-winners/" target="_blank" rel="noopener">Get Up-Close to Cells, Ink, and Insects in the Nikon Small World Photomicrography Contest</a></h3>
-  <p class="src">Colossal</p>
-  <p>This year's top prize went to Ole Bielfeldt of Cologne, who built his own rig to photograph tiny droplets flying inside an inkjet printer. Other winners include a jumping spider dusted with pollen, glowing mouse neurons, a tardigrade, a snowflake and a daisy lit only by its own natural fluorescence.</p>
-  <p class="why">The everyday world, seen at a scale where it becomes abstract art.</p>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/crimson-star.jpg" alt="Superfície do Sol em tons de carmim">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/sean-doran-crimson-star-film/" target="_blank" rel="noopener">Seán Doran’s ‘Crimson Star’ Tours the Raging Surface of the Sun</a></h3>
+  <p class="source">Colossal</p>
+  <p>Artist Seán Doran stitched together images from NASA’s Solar Dynamics Observatory into one seamless, hypnotic film of the Sun’s surface and flares. Each wavelength was assigned its own shade of pink or red, then repaired, graded, blended and retimed until science became something closer to painting.</p>
+  <p class="why">🔥 Ciência e arte no mesmo quadro — vale assistir em tela cheia.</p>
 </article>
 
 <article>
-  <img src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/Wallisfurth_Moos-Graffiti-Kuenstler-im-Einkaufszentrum.jpg" alt="" loading="lazy">
-  <h3><a href="https://reasonstobecheerful.world/moss-as-living-infrastructure/" target="_blank" rel="noopener">Imagining the Mossy Cities of the Future</a></h3>
-  <p class="src">Reasons to be Cheerful</p>
-  <p>German artist Philip Wallisfurth has been making "bio-graffiti" out of living moss since 2012, softening grey public spaces from Aachen to Berlin. Moss drinks through its surface, filters air and dampens noise — and cities are experimenting: moss roofs in Seoul cut peak surface temperatures by about 19 °C, and Berlin has a 1,200 m² vertical moss farm. The catch: it only cools while it stays damp.</p>
-  <p class="why">Graffiti that breathes.</p>
-</article>
-
-<article>
-  <img src="https://img.atlasobscura.com/x0-cBeAaRCG8uwV62juYK_ns4yj_LdiOuNK5FrhVw9Y/rs:fill:300:200:1/g:ce/c:1597:1064:nowe:859:321/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82NTY4/NzdmMy05ZGJjLTQ3/ODYtYmE2NC05OWY3/NjViZDdlMTM4OThi/OGNlNTc3OTkxOThj/NjVfUEExODMyMDAu/anBn.jpg" alt="" loading="lazy">
-  <h3><a href="https://www.atlasobscura.com/places/the-invisible-lamplighter-of-the-hague" target="_blank" rel="noopener">The Invisible Lamplighter in The Hague, Netherlands</a></h3>
-  <p class="src">Atlas Obscura</p>
-  <p>Tucked into the Mallemolen, a quiet alley in The Hague, a bronze sculpture shows a lamplighter mid-leap up a lamppost — turning the humble gas-lamp chore into acrobatics. Little bronze birds perch on the lantern, keeping him company.</p>
-  <p class="why">A forgotten job, remembered with a sense of humor.</p>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/glabush-8.jpg" alt="Paisagem pintada com óleo e areia">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/sky-glabush-landscape-paintings/" target="_blank" rel="noopener">How Sky Glabush Conjures Atmospheric Landscapes in Sand and Oil Paint</a></h3>
+  <p class="source">Colossal</p>
+  <p>From his home in rural Ontario, Sky Glabush paints forests, flower fields, rivers and night skies by mixing oil paint with sand, crushed quartz or raw pigment. He builds and scrapes back thin layers over grid and radial structures, in restrained palettes that feel quiet and immersive. A solo show opens in London on November 20.</p>
 </article>
 
 <h2>📜 Neste dia</h2>
-<div class="box">
-  <p style="margin:0"><strong>12–13 de novembro de 1833</strong> — a chuva de meteoros <a href="https://pt.wikipedia.org/wiki/Le%C3%B3nidas_(chuva_de_meteoros)" target="_blank" rel="noopener">Leônidas</a> explodiu numa verdadeira tempestade sobre a América do Norte, com estimativas de mais de cem mil meteoros por hora. O espetáculo foi registrado por vários povos nativos e levou o astrônomo Denison Olmsted a propor que os meteoros vinham de uma nuvem de partículas no espaço, e não da atmosfera — o começo da ciência moderna dos meteoros.</p>
-</div>
+<article>
+  <h3><a href="https://pt.wikipedia.org/wiki/Fantasia_(filme)" target="_blank" rel="noopener">13 de novembro de 1940: estreia “Fantasia”</a></h3>
+  <p class="source">Wikipédia</p>
+  <p>Há 86 anos, a Disney estreava em Nova York “Fantasia”, um filme sem diálogos em que a animação dança ao som de Bach, Tchaikovsky, Stravinsky e Beethoven, com a Orquestra de Filadélfia regida por Leopold Stokowski. Foi pioneiro no som estéreo em salas de cinema — e deu ao mundo o Mickey aprendiz de feiticeiro às voltas com vassouras que não param de carregar água.</p>
+</article>
 
 <h2>📖 Leitura longa</h2>
 <article>
-  <img src="https://images.aeonmedia.co/images/72b5e07e-102f-40ec-b0e7-0f8234e7ae07/essay-v1-dp279306.jpg?width=1200&amp;quality=75&amp;format=auto" alt="" loading="lazy">
-  <h3><a href="https://aeon.co/essays/a-new-answer-to-why-there-is-something-rather-than-nothing" target="_blank" rel="noopener">Why anything exists</a></h3>
-  <p class="src">Aeon · Andrew T Brenner · ~22 min</p>
-  <p>Why is there something rather than nothing? Philosopher Andrew Brenner pokes at the old assumption that "nothing" would be the simplest option: even an empty world would still contain truths of logic, mathematics and morality. If so, nothingness isn't so simple after all — and a world with something in it might be the simplest possible one. He admits it doesn't settle why reality looks the way it does, but it's a lovely puzzle to sit with.</p>
-  <p class="why">The biggest question there is, in coffee-sized steps.</p>
+  <img src="https://www.quantamagazine.org/wp-content/uploads/2026/11/Origin-of-Life-cr.Mark-Belan-Default.webp" alt="Ilustração sobre a origem da vida">
+  <h3><a href="https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/" target="_blank" rel="noopener">The Evolving Story of How Chemistry Became Biology</a></h3>
+  <p class="source">Quanta Magazine · ~20 min</p>
+  <p>Yasemin Saplakoglu traces a century of attempts to explain how lifeless chemistry turned into life — from Oparin and Miller’s early experiments to the rival camps of RNA-first, metabolism-first and membranes-first. Her argument: the old feuds are giving way to a more integrated view, where many molecules worked together and life emerged gradually rather than in a single spark.</p>
+  <p class="why">📚 Ótimo para o fim de semana: grande pergunta, contada com calma.</p>
 </article>
 
 <footer>
   <p>Pronto, é isso por hoje ☕</p>
-  <a href="editions/2026-11-11.html">← Edição anterior (11 de novembro)</a>
+  <a href="editions/2026-11-12.html">← Edição anterior (12 de novembro)</a>
 </footer>
 
 </main>
