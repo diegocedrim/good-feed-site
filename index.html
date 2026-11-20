@@ -3,249 +3,217 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Good Feed — 19 de novembro de 2026</title>
+<title>Good Feed — 20 de novembro de 2026</title>
 <style>
   :root {
     --bg: #faf6ef;
-    --card: #fffdf9;
-    --text: #2b2722;
-    --muted: #7a7065;
+    --card: #fffdf8;
+    --text: #2b2620;
+    --muted: #7a6f62;
     --accent: #a0522d;
-    --rule: #e8dfd2;
+    --rule: #e8dfd1;
     --why: #f3ebdd;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #1c1a17;
-      --card: #24211d;
-      --text: #ece6dc;
-      --muted: #a89d8f;
-      --accent: #e0a072;
-      --rule: #3a352f;
-      --why: #2e2a24;
+      --bg: #1c1915;
+      --card: #24201b;
+      --text: #ebe3d6;
+      --muted: #a89c8c;
+      --accent: #e0a070;
+      --rule: #3a342c;
+      --why: #2e2922;
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 18px;
+    line-height: 1.65;
   }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-  header { text-align: center; margin-bottom: 2.5rem; }
-  header h1 { font-size: 2.6rem; margin: 0; letter-spacing: 0.02em; font-weight: normal; }
-  header .date { color: var(--muted); font-style: italic; margin: 0.3rem 0 0.8rem; }
-  header .hello { margin: 0; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
+  header { text-align: center; margin-bottom: 48px; }
+  header h1 { font-size: 2.6em; margin: 0; letter-spacing: -0.01em; font-weight: normal; }
+  header .date { color: var(--muted); font-style: italic; margin: 6px 0 14px; }
+  header .greeting { margin: 0; }
   h2 {
-    font-size: 1.3rem; font-weight: normal; margin: 3rem 0 1rem;
-    padding-bottom: 0.4rem; border-bottom: 1px solid var(--rule);
+    font-size: 1.15em; font-weight: normal; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin: 56px 0 24px;
   }
-  article {
-    background: var(--card); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 1.2rem 1.3rem; margin: 0 0 1.4rem;
-  }
-  article img {
-    width: 100%; height: auto; max-height: 340px; object-fit: cover;
-    border-radius: 6px; margin-bottom: 0.8rem; display: block;
-  }
-  article h3 { font-size: 1.2rem; line-height: 1.4; margin: 0 0 0.2rem; font-weight: bold; }
-  article h3 a { color: var(--text); text-decoration: none; }
-  article h3 a:hover { color: var(--accent); text-decoration: underline; }
-  .source { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.6rem; font-style: italic; }
-  article p { margin: 0 0 0.6rem; }
-  .why {
-    background: var(--why); border-left: 3px solid var(--accent);
-    padding: 0.5rem 0.8rem; border-radius: 4px; font-size: 0.97rem; margin: 0.6rem 0 0;
-  }
-  footer {
-    text-align: center; margin-top: 3.5rem; padding-top: 1.5rem;
-    border-top: 1px solid var(--rule); color: var(--muted);
-  }
+  article { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 24px; margin-bottom: 26px; }
+  article img { width: 100%; height: auto; border-radius: 6px; display: block; margin-bottom: 16px; }
+  article h3 { font-size: 1.25em; line-height: 1.35; margin: 0 0 4px; font-weight: normal; }
+  article h3 a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  article h3 a:hover { color: var(--accent); border-color: var(--accent); }
+  .source { color: var(--muted); font-size: 0.85em; font-style: italic; margin: 0 0 12px; }
+  article p { margin: 0 0 12px; }
+  .why { background: var(--why); border-radius: 6px; padding: 8px 12px; font-size: 0.92em; margin: 6px 0 0; }
+  footer { text-align: center; color: var(--muted); margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); }
   a { color: var(--accent); }
   @media (max-width: 480px) {
-    body { font-size: 1.03rem; }
-    header h1 { font-size: 2.1rem; }
-    article { padding: 1rem; }
+    body { font-size: 17px; }
+    main { padding: 32px 14px 48px; }
+    article { padding: 18px 16px; }
+    header h1 { font-size: 2.1em; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
+<main>
 
 <header>
   <h1>Good Feed</h1>
-  <p class="date">Quinta-feira, 19 de novembro de 2026</p>
-  <p class="hello">Bom dia, Diego! Hoje tem deserto florido, batata lunar e 100 milhões de caranguejos a caminho do mar. ☕</p>
+  <p class="date">Sexta-feira, 20 de novembro de 2026</p>
+  <p class="greeting">Bom dia, Diego! Sexta de Consciência Negra, café na mão — e um universo cheio de coisa boa pra descobrir. ☕</p>
 </header>
+
+<h2>🌌 Foto do dia</h2>
+<article>
+  <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg" alt="Rastro de lanterna formando código Morse no céu noturno" loading="lazy">
+  <h3><a href="https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/" target="_blank" rel="noopener">V-G-R</a></h3>
+  <p class="source">NASA · Astronomy Picture of the Day</p>
+  <p>A long exposure turns a flashlight into a line of dots and dashes: “V-G-R” in Morse code, the call sign of Voyager 1 — waved at the sky during a public event celebrating the probe, now one full light-day from Earth.</p>
+</article>
 
 <h2>🔬 Ciência &amp; Espaço</h2>
 
 <article>
-  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_Cientistas-encontram-29-geleiras-em-Marte_site.jpg" alt="Paredão de gelo em cratera de Marte" loading="lazy">
-  <h3><a href="https://super.abril.com.br/ciencia/marte-tem-glaciares-ocultos-em-crateras-que-terminam-em-paredoes-de-200-metros/" target="_blank" rel="noopener">Glaciares ocultos em crateras de Marte terminam em paredões de até 200 metros</a></h3>
-  <p class="source">Superinteressante</p>
-  <p>Na superfície de Marte, gelo exposto vira gás rapidinho. Mas, escondido sob poeira e rochas, ele pode durar milhões de anos — e um estudo identificou 29 paredões abruptos dentro de crateras perto do vulcão Alba Mons, com até 209 metros de altura.</p>
-  <p>Não são rochas: seriam as frentes de glaciares cobertos de detritos, línguas de gelo que descem até 3 km pela parede da cratera e terminam de repente, como se cortadas a faca.</p>
-  <p class="why">Por que é legal: ajuda a contar a história do clima marciano — e marca no mapa onde futuros astronautas podem achar água.</p>
-</article>
-
-<article>
-  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261118065528.htm" target="_blank" rel="noopener">This 6-million-year-old whale may have had the most crooked face in mammal history</a></h3>
-  <p class="source">ScienceDaily</p>
-  <p>In Peru's Pisco Formation, a desert famous for beautifully preserved marine fossils, researchers described <em>Scaphokogia huachafo</em>, a small extinct relative of sperm whales, about 2.7 m long. Its skull is the most lopsided known in any whale or dolphin — both bony nostrils sit on the left side.</p>
-  <p>The team first suspected the fossil had been squashed after burial, but the bone shows no fractures: the twist was real. Its downturned, dense snout and flexible neck suggest it hunted along shallow seafloors, a lifestyle no living whale has.</p>
-  <p class="why">Why it's cool: evolution sometimes tries a wonderfully weird design, and the rocks remember it.</p>
-</article>
-
-<article>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/study-finds-potatoes-g.jpg" alt="Potato plants grown in lunar soil simulant" loading="lazy">
-  <h3><a href="https://phys.org/news/2026-11-potatoes-grown-simulated-lunar-soil.html" target="_blank" rel="noopener">Potatoes grown in simulated lunar soil match Earth-grown performance</a></h3>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/astronomers-reveal-the.jpg" alt="Lua Europa de Júpiter" loading="lazy">
+  <h3><a href="https://phys.org/news/2026-11-astronomers-reveal-oceanic-europa-sodium.html" target="_blank" rel="noopener">Europa's sodium cloud comes from its hidden ocean</a></h3>
   <p class="source">Phys.org</p>
-  <p>Oregon State University researchers grew potatoes through their entire life cycle in five imitation lunar soils. Plain "Moon dirt" stunted them badly, but mixing in 30% worm compost made the plants grow as well as those in rich Oregon farmland.</p>
-  <p>The organic matter seems to lock up the heavy metals found in lunar regolith, and the tubers kept their nutrition without extra natural toxins. Next up: testing ten varieties to find the best Moon potato.</p>
-  <p class="why">Why it's cool: the first lunar farmers may owe a lot to humble earthworms.</p>
+  <p>Jupiter's moon Europa is wrapped in a faint cloud of sodium stretching up to 30 times its own radius. Using Keck Observatory data going back to 1999, a Boston University team found that cloud has stayed remarkably steady for over two decades — it doesn't rise and fall with the eruptions of neighboring volcanic moon Io. The conclusion: the salt is leaking out from Europa's own subsurface ocean. The trick was to observe Europa while it sat in Jupiter's shadow, so its bright ice wouldn't drown out the glow.</p>
+  <p class="why">Por que é legal: estamos “provando” o sal de um oceano escondido sob o gelo, a 600 milhões de km.</p>
+</article>
+
+<article>
+  <h3><a href="https://www.sciencedaily.com/releases/2026/11/261119194525.htm" target="_blank" rel="noopener">Scientists turn Moon dust into LEGO-like bricks</a></h3>
+  <p class="source">ScienceDaily</p>
+  <p>A University of Arkansas team, led by an undergraduate, used a relatively low-power laser to fuse simulated lunar soil layer by layer into small interlocking bricks shaped like crosses and H's — no glue or binder needed from Earth. The pieces stand on their own but are still too porous to carry heavy loads, and the process must yet be tested in vacuum and low gravity.</p>
+  <p class="why">Why it's cool: a future Moon base might be snapped together like a toy set, made from the ground under the astronauts' feet.</p>
+</article>
+
+<article>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_molecula-potencial-prevenir-perda-visao-diabetes_site.jpg" alt="Exame de olho" loading="lazy">
+  <h3><a href="https://super.abril.com.br/saude/estudo-de-pesquisadores-brasileiros-identifica-molecula-com-potencial-de-prevenir-a-perda-de-visao-associada-ao-diabetes/" target="_blank" rel="noopener">Molécula estudada por brasileiros pode proteger a visão de quem tem diabetes</a></h3>
+  <p class="source">Superinteressante (via Agência FAPESP)</p>
+  <p>Pesquisadores da Unifesp e da Unesp, com colegas da Universidade do Colorado, testaram o peptídeo Ac2-26 — um pedaço de uma proteína anti-inflamatória que o próprio corpo produz — contra a retinopatia diabética, que afeta mais de 1 em cada 5 pessoas com diabetes. Em células de retina e em “minirretinas” cultivadas a partir de células-tronco de pacientes, a molécula reduziu a inflamação, protegeu as mitocôndrias e impediu a morte dos neurônios expostos a muito açúcar.</p>
+  <p class="why">Por que é legal: ciência paulista mirando uma das principais causas de cegueira evitável.</p>
 </article>
 
 <h2>🌱 Natureza &amp; Animais</h2>
 
 <article>
-  <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/el-ni%C3%B1o-rains-paint-the-atacama/atacamabloom_oli_20260914.jpg" alt="Imagem de satélite do deserto do Atacama florido" loading="lazy">
-  <h3><a href="https://science.nasa.gov/earth/earth-observatory/el-nino-rains-paint-the-atacama/" target="_blank" rel="noopener">El Niño Rains Paint the Atacama</a></h3>
-  <p class="source">NASA Earth Observatory</p>
-  <p>An unusually wet winter in northern Chile woke up seeds that had been waiting in the sand, and the driest desert on Earth burst into flower. Landsat images from September and October show brown ground near Copiapó turning to patches of green and red-purple.</p>
-  <p>The purple is likely <em>pata de guanaco</em>, and white hillsides are probably <em>suspiros</em>. Chilean botanists say this may be the most extensive "desierto florido" since satellites started watching.</p>
-  <p class="why">Why it's cool: a bloom so big you can see it from space.</p>
-</article>
-
-<article>
-  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/more-than-100-million.jpg" alt="Red crabs on Christmas Island" loading="lazy">
-  <h3><a href="https://phys.org/news/2026-11-red-crabs-annual-sea-australia.html" target="_blank" rel="noopener">Red crabs begin annual march to sea on Australia's Christmas Island</a></h3>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/sargassum-howeanum.jpg" alt="Floresta de algas sargaço submersa" loading="lazy">
+  <h3><a href="https://phys.org/news/2026-11-seaweed-hadnt-years-vast-underwater.html" target="_blank" rel="noopener">A seaweed unseen for 90 years — hiding in vast underwater forests</a></h3>
   <p class="source">Phys.org</p>
-  <p>With the first rains, more than 100 million red crabs have left the forests of Christmas Island, a speck in the Indian Ocean, to walk to the coast and breed. They time their spawning to the pre-dawn receding high tide during the moon's last quarter.</p>
-  <p>The population had fallen to around 50 million when invasive yellow crazy ants took over their burrows; ant control has helped it bounce back. The crabs are the island's keystone species, keeping the forest healthy.</p>
+  <p>The seaweed <em>Sargassum howeanum</em> was described near Australia's Lord Howe Island in 1935, but for decades only small, immature bits turned up in shallow water. Then underwater video in 2022 revealed dense forests of it at 20–38 metres deep, with adult plants up to 72 cm long — and the area covered grew 22-fold between 2009 and 2022. Scientists suspect cooler deep waters could serve as refuges for seaweed as the oceans warm.</p>
+  <p class="why">Why it's cool: a “lost” species wasn't gone — it was just living a little deeper than anyone looked.</p>
 </article>
 
 <article>
-  <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/19065110/1920px-Giant_anteater_-_Oso_hormiguero_Myrmecophaga_tridactyla_8697863742-768x512.jpg" alt="Giant anteater" loading="lazy">
-  <h3><a href="https://news.mongabay.com/short-article/2026/11/world-anteater-day-rewilding-and-restoration-offer-hope-for-enigmatic-species/" target="_blank" rel="noopener">World Anteater Day: Rewilding and restoration offer hope for enigmatic species</a></h3>
-  <p class="source">Mongabay</p>
-  <p>Today is World Anteater Day. In 2025 a giant anteater showed up in Argentina's Alma Guaraní reserve, in the Gran Chaco, for the first time since 1986 — and spent most of its time in areas left to recover on their own after fences kept out cattle, dogs and hunters.</p>
-  <p>On the Brazilian side, a camera in Rio Grande do Sul's Espinilho State Park filmed one in 2023, the first in that region since 1890. It probably walked over from Iberá, where about 110 anteaters have been released.</p>
-  <p class="why">Why it's cool: give the land a break and the tamanduá-bandeira finds its way home.</p>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-19T112142.133.jpg" alt="Arara sendo resgatada de um rio" loading="lazy">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/19/arara-afogando-rio-agradece-barqueiro-salvou-amazonia" target="_blank" rel="noopener">Arara que se afogava no rio “agradece” ao barqueiro que a salvou na Amazônia</a></h3>
+  <p class="source">Só Notícia Boa</p>
+  <p>Um piloteiro estendeu o remo para uma arara que se debatia na água de um rio amazônico, e ela subiu no barco. Com uma asa machucada, a ave foi levada até uma ilha para se recuperar numa árvore — não sem antes encostar o bico no salvador, num gesto que parece um obrigado. O turista Pedro Paulo Brisque, de Sumaré (SP), filmou tudo, e o vídeo passou de meio milhão de visualizações.</p>
+</article>
+
+<article>
+  <img src="https://scx1.b-cdn.net/csz/news/tmb/2026/honey-bees-apis-mellif.jpg" alt="Abelhas melíferas" loading="lazy">
+  <h3><a href="https://phys.org/news/2026-11-oxygen-high-altitudes-honey-bees.html" target="_blank" rel="noopener">Thin mountain air may protect honey bees from a deadly mite</a></h3>
+  <p class="source">Phys.org</p>
+  <p>Chinese researchers placed 60 mite-infested hives at sites across Tibet and Yunnan. In Lhasa, above 3,500 metres, 13 of 15 colonies survived two years — while hives elsewhere didn't make it past one. The <em>Varroa</em> mites simply reproduced less up high, and recreating low-oxygen conditions inside lowland hives had the same effect.</p>
+  <p class="why">Why it's cool: a possible chemical-free trick against one of the bees' worst enemies.</p>
 </article>
 
 <h2>🧑‍🤝‍🧑 Histórias Humanas</h2>
 
 <article>
-  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-18-at-12.21.50.jpeg" alt="Pedro Igson, estudante de Maranguape" loading="lazy">
-  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/18/aluno-escola-publica-ceara-aprovado-8-universidades" target="_blank" rel="noopener">Filho de vigilante, aluno de escola pública do Ceará é aprovado em 8 universidades, incluindo USP e Unicamp</a></h3>
+  <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2026/11/elke-2026-11-20T113149.177.jpg" alt="Três mulheres homenageadas no Dia da Consciência Negra" loading="lazy">
+  <h3><a href="https://www.sonoticiaboa.com.br/2026/11/20/dia-da-consciencia-negra-mulheres-homenageadas" target="_blank" rel="noopener">Consciência Negra: três mulheres que mostram a força de quem vence o preconceito</a></h3>
   <p class="source">Só Notícia Boa</p>
-  <p>Pedro Igson Alves Silva, de 18 anos, mora em Maranguape, na Grande Fortaleza, e estudou a vida inteira em escola pública — terminou o ensino médio numa escola estadual profissionalizante, junto com o técnico em Administração.</p>
-  <p>Ele passou em cursos como Direito, Economia, Ciências Sociais e Engenharia de Produção em oito instituições, entre elas UFC, USP, Unicamp e PUC-Rio. A escolha final: Ciências Econômicas na Federal do Ceará, pertinho de casa.</p>
+  <p>Para o 20 de novembro, o site celebra três trajetórias: a atriz Teca Pereira, de 68 anos, premiada como Melhor Atriz no Prêmio Potências 2026 pelo filme “Feito Pipa”; a jornalista Basília Rodrigues, eleita Jornalista do Ano no mesmo prêmio; e Dandara dos Palmares, guerreira do Quilombo dos Palmares, que ganhou um busto numa praça do Rio de Janeiro. O texto lembra ainda que o preconceito é aprendido — e, por isso, pode ser desaprendido.</p>
 </article>
 
 <article>
-  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/86-year-old-mother-Chen-family-photo.jpg" alt="Family on the mountain staircase" loading="lazy">
-  <h3><a href="https://www.goodnewsnetwork.org/siblings-build-430-step-sky-ladder-for-their-mother-who-refuses-to-live-in-the-city/" target="_blank" rel="noopener">Siblings Build 430-Step 'Sky Ladder' for Their Mother Who Refuses to Live in the City</a></h3>
+  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Peter-Neumann-unsplash.jpg" alt="Rinoceronte-indiano" loading="lazy">
+  <h3><a href="https://www.goodnewsnetwork.org/father-daughter-business-sells-paper-and-stationery-made-from-rhino-dung/" target="_blank" rel="noopener">Rhino dung paper: how a father and daughter turned poop into protection</a></h3>
   <p class="source">Good News Network</p>
-  <p>After her husband died, an 86-year-old woman in China's Zhejiang Province moved to town, but she missed her mountain — and the old path up had vanished under brush. Her daughter Huang Zhulian, 58, decided to fix that.</p>
-  <p>From August to October the family carried stones, mixed cement and cooked for each other, with a grandson using a heavy-lift drone to fly materials up. Some steps are bolted to a sheer cliff; the mother chipped in from her savings, and now hikers and herb gatherers use the path too.</p>
-  <p class="why">Why it's cool: love, measured in 430 steps.</p>
+  <p>In Assam, India, retired mining engineer Mahesh Chandra Bora and his daughter Nisha run Elrhino, which makes notebooks, lampshades and playing cards from rhino and elephant dung — the first tests were done in his wife's kitchen blender. The dung is washed and boiled to recover plant fibres, then pulped with recycled paper. Villagers near Kaziranga and Pobitora parks are paid to collect it, giving them income that offsets crop damage from wandering rhinos.</p>
+  <p class="why">Why it's cool: it turns the rhino from a nuisance into a neighbour worth keeping around.</p>
+</article>
+
+<article>
+  <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screengrabs-@maddygoldberg-via-Instagram.jpg" alt="Chef Maddy Goldberg cozinhando" loading="lazy">
+  <h3><a href="https://www.goodnewsnetwork.org/every-tuesday-this-chef-cooks-for-100-people-in-need-using-random-food-bank-ingredients/" target="_blank" rel="noopener">Every Tuesday, this chef cooks for 100 people with whatever the food bank has</a></h3>
+  <p class="source">Good News Network</p>
+  <p>Toronto chef Maddy Goldberg left restaurant kitchens — where she watched huge amounts of food go to waste — and now volunteers weekly at the Fort York Food Bank. She improvises a real meal from the week's random donations, like lentil fritters with caramelized onion, cinnamon and curry. Her videos of the mystery-box cooking have drawn 180,000 followers.</p>
 </article>
 
 <h2>🛠️ Tecnologia, História &amp; Curiosidades</h2>
 
 <article>
-  <img src="https://th-thumbnailer.cdn-si-edu.com/DNfdlS-7yAYhKGuba7Z3gkGvHgs=/420x240/filters:focal(900x600:901x601)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5c/8a/5c8a22a0-43d2-4177-a489-73128e6417df/untitled-1.jpg" alt="Illustration of the Newark boys and Louis Pasteur" loading="lazy">
-  <h3><a href="https://www.smithsonianmag.com/innovation/when-dog-attacked-group-young-boys-1885-sent-them-trans-atlantic-adventure-changed-medicine-180989834/" target="_blank" rel="noopener">When a Dog Bit a Group of Young Boys in 1885, It Sent Them on a Trans-Atlantic Adventure That Changed Medicine</a></h3>
+  <img src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/Credit-Paysages-studio-1-scaled.jpg" alt="Parque urbano em Montreal" loading="lazy">
+  <h3><a href="https://reasonstobecheerful.world/montreal-harnessing-ocean-sounds-countering-traffic-noise/" target="_blank" rel="noopener">Montreal is using soothing ocean sounds to soften traffic noise</a></h3>
+  <p class="source">Reasons to be Cheerful</p>
+  <p>A small park beside a noisy junction in Verdun plays waves, birdsong and crunching sand recorded on the Magdalen Islands — home of the families who settled in that neighbourhood. Designers tuned the frequencies so the waves wouldn't be mistaken for cars, and cut boat horns because people didn't find them relaxing. The installation is now permanent, and next year residents will help choose the sounds.</p>
+  <p class="why">Why it's cool: instead of just blocking city noise, it designs what the city sounds like.</p>
+</article>
+
+<article>
+  <img src="https://th-thumbnailer.cdn-si-edu.com/tiVLgsBxPTtlvMOhzpl1DHn56T0=/420x240/filters:focal(1750x867:1751x868)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/22/af/22afdeb0-21f6-4f47-b4bd-ff9cd12a99dd/lh_presse_rekonstruktion_der_figuren_im_ostgiebel_des_parthenon-detail.jpg" alt="Reconstrução das figuras do frontão leste do Partenon" loading="lazy">
+  <h3><a href="https://www.smithsonianmag.com/smart-news/have-archaeologists-finally-pieced-together-the-parthenon-puzzle-one-of-ancient-greece-greatest-mysteries-180989903/" target="_blank" rel="noopener">Have archaeologists finally pieced together the Parthenon puzzle?</a></h3>
   <p class="source">Smithsonian Magazine</p>
-  <p>In late 1885, a group of working-class boys in New Jersey were bitten by a dog feared to be rabid — at the time, a death sentence. Louis Pasteur had only just tried his new rabies treatment in Paris, so the public chipped in to send the boys across the Atlantic to him.</p>
-  <p>They came home healthy and briefly famous, and their story helped convince Americans that laboratory science could actually save lives.</p>
-  <p class="why">Why it's cool: a kids' adventure story that is also the birth of modern medical hope.</p>
+  <p>The Parthenon's east pediment once showed the birth of Athena, but most of its sculptures were lost centuries ago. German researchers now believe they have reconstructed the full 39-figure scene, using Roman sarcophagi that appear to copy it as clues and 3D printing to test the arrangement.</p>
+  <p class="why">Why it's cool: a 2,400-year-old jigsaw, solved with Roman “photocopies” and modern printers.</p>
 </article>
 
 <article>
-  <img src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/tersus-solutions-CO2-carbon-dioxide-laundry-washing-machine-LG-Samsung-clothes.webp" alt="CO2 laundry machine" loading="lazy">
-  <h3><a href="https://reasonstobecheerful.world/carbon-dioxide-laundry-machine/" target="_blank" rel="noopener">The Waterless, Hyper-Efficient Machines That Clean Clothes With Carbon Dioxide</a></h3>
-  <p class="source">Reasons to Be Cheerful</p>
-  <p>Squeeze carbon dioxide hard enough and it becomes a liquid that can wash fabric — no water, no detergent, no dryer. Release the pressure and the CO2 turns back into gas, leaving clothes already dry. A Colorado company has spent years refining the idea for outdoor gear and firefighter suits, removing over 95% of toxic soot compounds.</p>
-  <p>The catch: the energy savings are modest, and shrinking high-pressure tanks for home use is pricey, though LG and Samsung are filing patents.</p>
-  <p class="why">Why it's cool: laundry physics that sounds like science fiction, already working in the real world.</p>
-</article>
-
-<article>
-  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_493_Vinhos_Brasileiros.jpg" alt="Ilustração de taças de vinho brasileiro" loading="lazy">
-  <h3><a href="https://super.abril.com.br/sociedade/a-hora-e-a-vez-do-vinho-brasileiro/" target="_blank" rel="noopener">A hora e a vez do vinho brasileiro</a></h3>
+  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_493_Oraculo_Pato_de_borracha.jpg" alt="Patinho de borracha amarelo" loading="lazy">
+  <h3><a href="https://super.abril.com.br/coluna/oraculo/qual-e-a-origem-do-patinho-de-borracha/" target="_blank" rel="noopener">Qual é a origem do patinho de borracha?</a></h3>
   <p class="source">Superinteressante</p>
-  <p>A reportagem começa num salão em Bento Gonçalves (RS), com 800 pessoas provando 16 vinhos ao mesmo tempo na Avaliação Nacional de Vinhos, escolhidos às cegas entre 558 amostras. Entre os selecionados, 14 gaúchos, um catarinense… e um do Distrito Federal.</p>
-  <p>O vinho do Cerrado resume o bom momento: novas regiões, técnicas e produtores estão mudando a cara — e o sabor — do vinho feito no Brasil.</p>
-  <p class="why">Por que é legal: dá vontade de trocar o café por uma taça (mais tarde, claro).</p>
+  <p>Os primeiros brinquedos de borracha surgiram depois que Charles Goodyear inventou a vulcanização, em 1839 — mas eram pesados e serviam de mordedor para bebês (e cachorros). O patinho amarelo como conhecemos ganhou forma em 1948, em Hong Kong, e no ano seguinte o artista americano Peter Ganine patenteou a versão flutuante e simpática que vendeu milhões. Detalhe: a maioria dos “patinhos de borracha” é, na verdade, de vinil.</p>
 </article>
 
 <h2>🎨 Arte &amp; Design</h2>
 
 <article>
-  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/vhils-5.jpg" alt="Colonial building wrapped in silver thermal blankets in São Paulo" loading="lazy">
-  <h3><a href="https://www.thisiscolossal.com/2026/11/vhils-marcelo-cidade-sao-paolo-2878/" target="_blank" rel="noopener">Vhils and Marcelo Cidade Cloak a São Paulo Colonial Building in Silver Thermal Blankets</a></h3>
+  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/gunnarsson-5.jpg" alt="Ondas quebrando em rochas negras na Islândia, em preto e branco" loading="lazy">
+  <h3><a href="https://www.thisiscolossal.com/2026/11/vilhelm-gunnarsson-iceland-ocean-photography/" target="_blank" rel="noopener">Dramatic waves crash on Iceland's coast in photos by Vilhelm Gunnarsson</a></h3>
   <p class="source">Colossal</p>
-  <p>At Rua Cardeal Arcoverde, 2878, in Pinheiros, Portuguese artist Vhils and Brazilian artist Marcelo Cidade wrapped an old colonial-style house in the shiny emergency blankets used in rescues, glued on with cornstarch so the arched windows and reliefs still show.</p>
-  <p>The facade now mirrors passersby and shimmers with the light. The point, they say, is that a building can start to disappear long before it's demolished — and wrapping it makes you actually look.</p>
-  <p class="why">Why it's cool: a gleaming silver house on a São Paulo street you may have walked past.</p>
+  <p>Gunnarsson, a press photographer who also volunteers on a rescue team, heads to the volcanic Reykjanes Peninsula during or right after storms, when the surf is wildest. His black-and-white images show waves exploding on black rocks, rolling onto black-sand beaches seen from above, and sunlight breaking through over the dark Atlantic — in one crest, he even sees a ghostly face.</p>
 </article>
 
 <article>
-  <img src="https://www.quantamagazine.org/wp-content/uploads/2042/11/ImageGallery_EscherMath-crSEENOTES-Default.webp" alt="M.C. Escher artwork" loading="lazy">
-  <h3><a href="https://www.quantamagazine.org/how-m-c-eschers-art-creates-bizarre-mathematical-worlds-20261118/" target="_blank" rel="noopener">How M.C. Escher's Art Creates Bizarre Mathematical Worlds</a></h3>
-  <p class="source">Quanta Magazine</p>
-  <p>Escher said he "never got a pass mark" in math. Yet after seeing the Alhambra's tiles in 1922, he taught himself the symmetries of tilings so well that a crystallographer later said he understood color symmetry better than the experts.</p>
-  <p>A friendship with geometer H.S.M. Coxeter led to his hyperbolic "Circle Limit" prints, and his work later inspired Roger Penrose and a 2003 mathematical decoding of "Print Gallery." A new exhibition at MoMath in New York runs until February 2027.</p>
-</article>
-
-<article>
-  <img src="https://www.thisiscolossal.com/wp-content/uploads/2026/11/lefebvre-9.jpeg" alt="Painting of giant trees over marbled paper by Sylvain Lefebvre" loading="lazy">
-  <h3><a href="https://www.thisiscolossal.com/2026/11/sylvain-lefebvre-oil-paintings-marbled-paper/" target="_blank" rel="noopener">Hand-Marbled Papers Ground Sylvain Lefebvre's Surreal Landscapes</a></h3>
-  <p class="source">Colossal</p>
-  <p>French artist Sylvain Lefebvre collages hand-marbled papers under layers of oil, acrylic and ink, so the swirls become bark, mist and river. Giant trees tower over tiny people and animals in a forest where everyone seems to belong.</p>
-  <p>"Journeys Into the Unseen Forest" is at Rebecca Hossack Art Gallery in London through December 23.</p>
-</article>
-
-<h2>🌌 Foto do dia</h2>
-
-<article>
-  <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Horsehead_Nebula_Killion.jpg" alt="Nebulosas Cabeça de Cavalo e Chama em Órion" loading="lazy">
-  <h3><a href="https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/" target="_blank" rel="noopener">The Horsehead and Flame Nebulas</a></h3>
-  <p class="source">NASA APOD · Mark Killion</p>
-  <p>A dark horse's head of dust rears against glowing red gas beside the Flame Nebula in Orion — photographed remotely from a telescope in Utah.</p>
+  <img src="https://th-thumbnailer.cdn-si-edu.com/c0IKFCJ3kcOX23SCjMXOnQvlvDE=/420x240/filters:focal(3750x2500:3751x2501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b7/76/b776562f-4f2d-4ee0-8a66-2af6dadcddee/taxi.jpg" alt="Táxi em miniatura feito por artista indígena" loading="lazy">
+  <h3><a href="https://www.smithsonianmag.com/smithsonian-institution/this-new-exhibition-features-a-tiny-taxi-a-pint-size-cookstove-and-more-than-300-other-marvelous-miniatures-made-by-indigenous-artists-180989912/" target="_blank" rel="noopener">A tiny taxi, a pint-size cookstove and 300 more marvelous miniatures</a></h3>
+  <p class="source">Smithsonian Magazine</p>
+  <p>“Mighty Miniatures,” a new show at the National Museum of the American Indian in New York, gathers more than 300 small-scale works by Native artists from across the Americas and Hawaii. The pieces range from everyday objects — a miniature taxi, a little cookstove — to traditional crafts shrunk down with astonishing detail.</p>
+  <p class="why">Why it's cool: proof that you don't need size to tell a big story.</p>
 </article>
 
 <h2>📜 Neste dia</h2>
-
 <article>
-  <h3><a href="https://pt.wikipedia.org/wiki/Mil%C3%A9simo_gol_de_Pel%C3%A9" target="_blank" rel="noopener">19 de novembro de 1969: o milésimo gol de Pelé</a></h3>
+  <h3><a href="https://pt.wikipedia.org/wiki/Edwin_Powell_Hubble" target="_blank" rel="noopener">20 de novembro de 1889: nasce Edwin Hubble</a></h3>
   <p class="source">Wikipédia</p>
-  <p>Num Maracanã lotado, em Santos x Vasco, Pelé cobrou um pênalti e marcou o gol número mil da carreira, em sua 909ª partida. O jogo parou, o estádio veio abaixo, e ele dedicou o gol às crianças do Brasil.</p>
-  <p class="why">Por que é legal: até hoje, "o milésimo" é sinônimo de marca impossível no futebol brasileiro.</p>
+  <p>Nascido no Missouri, Hubble mostrou nos anos 1920 que as “nebulosas espirais” eram galáxias inteiras além da Via Láctea — e que o universo está se expandindo. De repente, o cosmos ficou incomparavelmente maior. Hoje, o telescópio espacial com seu nome continua a nos mostrar esse universo, e vai procurar magnésio na atmosfera de Europa, a lua da primeira história de hoje.</p>
 </article>
 
 <h2>📖 Leitura longa</h2>
-
 <article>
-  <img src="https://super.abril.com.br/wp-content/uploads/2026/11/SI_493_Linguagem_corporal.jpg" alt="Ilustração sobre linguagem corporal" loading="lazy">
-  <h3><a href="https://super.abril.com.br/ciencia/linguagem-corporal-o-que-ela-realmente-diz/" target="_blank" rel="noopener">Linguagem corporal: o que ela realmente diz?</a></h3>
-  <p class="source">Superinteressante</p>
-  <p>Tudo começa com Hans Esperto, o cavalo alemão do início do século 20 que "resolvia" contas batendo a pata. Um psicólogo descobriu o truque sem truque: Hans lia sinais minúsculos e involuntários no corpo de quem perguntava — acertava 89% quando via a pessoa, e só 6% quando apenas ouvia.</p>
-  <p>A partir daí, a reportagem de capa da Super separa o que a ciência sabe de verdade sobre gestos, posturas e expressões do monte de mitos de "como saber se alguém está mentindo". Ótima para ler com calma.</p>
+  <img src="https://images.aeonmedia.co/images/0cd99f4c-ddf6-43aa-b167-ea096fe4a0e7/essay-selkie-final-illustration.jpg?width=1200&amp;quality=75&amp;format=auto" alt="Ilustração de uma mulher-foca (selkie)" loading="lazy">
+  <h3><a href="https://aeon.co/essays/do-you-have-a-selkie-or-a-seal-in-the-family" target="_blank" rel="noopener">My grandmother was a seal</a></h3>
+  <p class="source">Aeon · ensaio de Jordan Lee Borgman · ~3.700 palavras</p>
+  <p>Many Irish families once claimed descent from selkies — seals who shed their skins to live as women, often kept ashore because a husband hid the sealskin. Starting from folklore recordings made in 1948, Borgman argues these tales, with their theft and abandonment, offer a more honest picture of our kinship with animals than today's sentimental “pets are family” talk. A beautiful, melancholy essay about how love and loss can share the same shoreline.</p>
 </article>
 
 <footer>
   <p>Pronto, é isso por hoje ☕</p>
-  <a href="editions/2026-11-18.html">← Edição anterior (18 de novembro)</a>
+  <a href="editions/2026-11-19.html">← Edição anterior (19 de novembro)</a>
 </footer>
 
-</div>
+</main>
 </body>
 </html>
